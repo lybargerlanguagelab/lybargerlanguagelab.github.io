@@ -282,7 +282,24 @@ a:hover { color: var(--green-dark); }
 .news-item {
   border-bottom: 1px solid var(--rule);
   padding-block: 1.1rem;
+  scroll-margin-block-start: 1.5rem;
 }
+
+/* Arriving from a home-page headline: mark the item that was asked for.
+   The rule is an inset shadow, not a border, so nothing shifts. */
+.news-item:target {
+  background: var(--bg-soft);
+  box-shadow: inset 0.25rem 0 0 var(--gold);
+  padding-inline: 1rem;
+  margin-inline: -1rem;
+}
+
+/* Home strip headlines link to the matching item on the News page.
+   Underline on hover only: four underlined headings in a row is noisy. */
+.news-item h3 a { text-decoration: none; }
+
+.news-item h3 a:hover,
+.news-item h3 a:focus-visible { text-decoration: underline; }
 
 .news-item:last-of-type { border-bottom: none; }
 
@@ -380,6 +397,27 @@ details.pub-collapse summary h2 {
 .project h2 { border: none; margin: 0 0 0.4rem; padding: 0; }
 
 .project .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.5rem; }
+
+.project-figure {
+  display: block;
+  width: 100%;
+  max-width: 16rem;
+  height: auto;
+  margin: 0 0 1rem;
+}
+
+/* Figure beside the prose once there is room, stacked above it before that.
+   Same shape as .person-wide on the People page. */
+@media (min-width: 42rem) {
+  .project-media {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .project-figure { margin-bottom: 0; }
+}
 
 /* ---------- contact ---------- */
 

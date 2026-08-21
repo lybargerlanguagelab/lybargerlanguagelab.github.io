@@ -1,54 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Abstract illustration: conversation becomes a language signal, then structured health information">
+<!-- Home page hero. Three panels, left to right: language in, model, structure out.
+     Palette matches assets/css/styles.css. Decorative: index.html carries alt="". -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Illustration: a two-turn conversation, a neural network with one path lit, and a passage of text whose spans are labelled by type">
   <rect width="1200" height="300" rx="12" fill="#f4f7f5"/>
 
-  <!-- conversation -->
-  <g>
-    <rect x="80" y="72" width="210" height="72" rx="16" fill="#006633"/>
-    <path d="M110 144 l-14 24 34 -24 z" fill="#006633"/>
-    <rect x="102" y="94" width="140" height="9" rx="4.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="102" y="113" width="96" height="9" rx="4.5" fill="#ffffff" opacity="0.6"/>
-
-    <rect x="140" y="176" width="185" height="62" rx="16" fill="#ffffff" stroke="#4d8f6a" stroke-width="2"/>
-    <path d="M296 238 l12 20 -30 -20 z" fill="#ffffff" stroke="#4d8f6a" stroke-width="2" stroke-linejoin="round"/>
-    <rect x="160" y="194" width="120" height="8" rx="4" fill="#a3c4b0"/>
-    <rect x="160" y="211" width="82" height="8" rx="4" fill="#c9d8ce"/>
+  <!-- left: a conversation, two turns -->
+  <g id="conversation" transform="translate(70,50)">
+    <rect x="0" y="14" width="210" height="72" rx="16" fill="#006633"/>
+    <path d="M30 86 l-14 24 34 -24 z" fill="#006633"/>
+    <rect x="22" y="36" width="140" height="9" rx="4.5" fill="#ffffff" opacity="0.85"/>
+    <rect x="22" y="55" width="96" height="9" rx="4.5" fill="#ffffff" opacity="0.6"/>
+    <rect x="60" y="118" width="185" height="62" rx="16" fill="#ffffff" stroke="#4d8f6a" stroke-width="2"/>
+    <path d="M216 180 l12 20 -30 -20 z" fill="#ffffff" stroke="#4d8f6a" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="80" y="136" width="120" height="8" rx="4" fill="#a3c4b0"/>
+    <rect x="80" y="153" width="82" height="8" rx="4" fill="#c9d8ce"/>
   </g>
+  <circle cx="430" cy="150" r="6" fill="#ffcc33"/>
 
-  <!-- language signal -->
-  <g fill="none" stroke-linecap="round">
-    <path d="M370 155 c 20 -50 40 -50 60 0 s 40 50 60 0 s 40 -50 60 0 s 40 50 60 0"
-          stroke="#006633" stroke-width="4"/>
-    <path d="M370 165 c 20 30 40 30 60 0 s 40 -30 60 0 s 40 30 60 0 s 40 -30 60 0"
-          stroke="#a3c4b0" stroke-width="3"/>
+  <!-- middle: a network, one path through it lit -->
+  <g id="model" transform="translate(450,50)">
+    <g stroke="#c9d8ce" stroke-width="1.5">
+      <line x1="22" y1="22" x2="130" y2="48"/>
+      <line x1="22" y1="22" x2="130" y2="100"/>
+      <line x1="22" y1="22" x2="130" y2="152"/>
+      <line x1="22" y1="74" x2="130" y2="48"/>
+      <line x1="22" y1="74" x2="130" y2="100"/>
+      <line x1="22" y1="74" x2="130" y2="152"/>
+      <line x1="22" y1="126" x2="130" y2="48"/>
+      <line x1="22" y1="126" x2="130" y2="100"/>
+      <line x1="22" y1="126" x2="130" y2="152"/>
+      <line x1="22" y1="178" x2="130" y2="48"/>
+      <line x1="22" y1="178" x2="130" y2="100"/>
+      <line x1="22" y1="178" x2="130" y2="152"/>
+      <line x1="130" y1="48" x2="238" y2="74"/>
+      <line x1="130" y1="48" x2="238" y2="126"/>
+      <line x1="130" y1="100" x2="238" y2="74"/>
+      <line x1="130" y1="100" x2="238" y2="126"/>
+      <line x1="130" y1="152" x2="238" y2="74"/>
+      <line x1="130" y1="152" x2="238" y2="126"/>
+    </g>
+    <g stroke="#ffcc33" stroke-width="3" fill="none">
+      <path d="M22 74 L 130 100"/>
+      <path d="M130 100 L 238 74"/>
+    </g>
+    <g fill="#ffffff" stroke="#4d8f6a" stroke-width="2.5">
+      <circle cx="22" cy="22" r="11"/>
+      <circle cx="22" cy="74" r="11"/>
+      <circle cx="22" cy="126" r="11"/>
+      <circle cx="22" cy="178" r="11"/>
+      <circle cx="130" cy="48" r="11"/>
+      <circle cx="130" cy="100" r="11"/>
+      <circle cx="130" cy="152" r="11"/>
+      <circle cx="238" cy="74" r="11"/>
+      <circle cx="238" cy="126" r="11"/>
+    </g>
+    <circle cx="22" cy="74" r="11" fill="#006633" stroke="#006633" stroke-width="2.5"/>
+    <circle cx="130" cy="100" r="11" fill="#006633" stroke="#006633" stroke-width="2.5"/>
+    <circle cx="238" cy="74" r="11" fill="#ffcc33" stroke="#ffcc33" stroke-width="2.5"/>
   </g>
-  <circle cx="352" cy="158" r="6" fill="#ffcc33"/>
+  <circle cx="750" cy="150" r="6" fill="#ffcc33"/>
 
-  <!-- tokens -->
-  <g fill="#4d8f6a">
-    <rect x="640" y="150" width="26" height="10" rx="5"/>
-    <rect x="674" y="150" width="16" height="10" rx="5"/>
-    <rect x="698" y="150" width="30" height="10" rx="5"/>
-  </g>
-  <circle cx="745" cy="155" r="6" fill="#ffcc33"/>
-
-  <!-- structured record -->
-  <g>
-    <rect x="790" y="58" width="330" height="184" rx="12" fill="#ffffff" stroke="#dfe5e1" stroke-width="2"/>
-    <rect x="790" y="58" width="330" height="34" rx="12" fill="#eef3ef"/>
-    <rect x="790" y="80" width="330" height="12" fill="#eef3ef"/>
-    <circle cx="812" cy="75" r="5" fill="#c9d8ce"/>
-    <circle cx="830" cy="75" r="5" fill="#c9d8ce"/>
-
-    <rect x="812" y="110" width="64" height="14" rx="7" fill="#006633"/>
-    <rect x="888" y="112" width="200" height="10" rx="5" fill="#dfe5e1"/>
-
-    <rect x="812" y="140" width="64" height="14" rx="7" fill="#4d8f6a"/>
-    <rect x="888" y="142" width="164" height="10" rx="5" fill="#dfe5e1"/>
-
-    <rect x="812" y="170" width="64" height="14" rx="7" fill="#ffcc33"/>
-    <rect x="888" y="172" width="186" height="10" rx="5" fill="#dfe5e1"/>
-
-    <rect x="812" y="200" width="64" height="14" rx="7" fill="#a3c4b0"/>
-    <rect x="888" y="202" width="140" height="10" rx="5" fill="#dfe5e1"/>
+  <!-- right: the same language with its spans labelled by type -->
+  <g id="labelled-text" transform="translate(790,50)">
+    <rect x="0" y="10" width="330" height="180" rx="10" fill="#ffffff" stroke="#dfe5e1" stroke-width="2"/>
+    <rect x="52" y="36" width="104" height="20" rx="5" fill="#ffcc33" opacity="0.5"/>
+    <rect x="128" y="84" width="110" height="20" rx="5" fill="#a3c4b0" opacity="0.7"/>
+    <rect x="30" y="132" width="92" height="20" rx="5" fill="#4d8f6a" opacity="0.4"/>
+    <rect x="30" y="41" width="228" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="30" y="65" width="196" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="30" y="89" width="236" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="30" y="113" width="174" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="30" y="137" width="214" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="30" y="161" width="158" height="9" rx="4.5" fill="#c9d8ce"/>
+    <rect x="278" y="39" width="34" height="14" rx="7" fill="#ffcc33"/>
+    <rect x="278" y="87" width="34" height="14" rx="7" fill="#a3c4b0"/>
+    <rect x="278" y="135" width="34" height="14" rx="7" fill="#4d8f6a"/>
   </g>
 </svg>

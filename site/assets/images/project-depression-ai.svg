@@ -1,0 +1,23 @@
+<!-- Projects page figure: conversational AI for depression management.
+     A two-turn exchange above, ranked candidate recommendations below,
+     gold marking the one under review. Same vocabulary as the home hero.
+     Decorative: projects.html carries alt="". -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Illustration: a two-turn conversation above a short ranked list of options">
+  <rect width="320" height="240" rx="10" fill="#f4f7f5"/>
+
+  <!-- patient turn -->
+  <path d="M34 14 H 168 A 18 18 0 0 1 186 32 V 62 A 18 18 0 0 1 168 80 L 62 80 L 40 104 L 46 80 H 34 A 18 18 0 0 1 16 62 V 32 A 18 18 0 0 1 34 14 Z" fill="#006633"/>
+  <rect x="38" y="34" width="112" height="10" rx="5" fill="#ffffff" opacity="0.85"/>
+  <rect x="38" y="52" width="74" height="10" rx="5" fill="#ffffff" opacity="0.55"/>
+
+  <!-- agent turn -->
+  <path d="M152 96 H 286 A 18 18 0 0 1 304 114 V 140 A 18 18 0 0 1 286 158 H 278 L 284 182 L 262 158 L 152 158 A 18 18 0 0 1 134 140 V 114 A 18 18 0 0 1 152 96 Z" fill="#ffffff" stroke="#4d8f6a" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="156" y="114" width="122" height="9" rx="4.5" fill="#a3c4b0"/>
+  <rect x="156" y="131" width="82" height="9" rx="4.5" fill="#c9d8ce"/>
+
+  <!-- candidate recommendations, ranked; gold marks the one being checked -->
+  <circle cx="26" cy="183" r="9" fill="#ffcc33"/>
+  <rect x="48" y="176" width="180" height="15" rx="7.5" fill="#006633"/>
+  <rect x="48" y="199" width="132" height="13" rx="6.5" fill="#4d8f6a"/>
+  <rect x="48" y="220" width="98" height="13" rx="6.5" fill="#a3c4b0"/>
+</svg>
