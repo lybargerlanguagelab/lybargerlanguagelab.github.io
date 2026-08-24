@@ -277,6 +277,42 @@ a:hover { color: var(--green-dark); }
 
 .team-strip img { border-radius: 50%; }
 
+/* Each strip entry is one link covering photo and name, so keyboard and
+   screen reader users get a single target per person, not two adjacent
+   links to the same place. */
+.team-strip a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.team-strip a span { display: block; margin-top: 0.35rem; }
+
+.team-strip a:hover span,
+.team-strip a:focus-visible span { text-decoration: underline; }
+
+.team-strip a:hover img {
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--green);
+}
+
+.team-strip a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Arriving from a home-page team-strip link: mark the person who was asked
+   for. An outline, not the padded inset bar used for news items: cards are
+   grid items, and padding would resize the headshot and shift the row. */
+.person-wide, .card { scroll-margin-block-start: 2rem; }
+
+.person-wide:target,
+.card:target {
+  outline: 3px solid var(--gold);
+  outline-offset: 0.6rem;
+  border-radius: 4px;
+}
+
 /* ---------- news ---------- */
 
 .news-item {
