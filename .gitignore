@@ -3,5 +3,10 @@
 # incoming artifacts) stays local.
 /*
 !/.gitignore
+!/.gitattributes
 !/site/
 !/tools/
+
+# Build artifacts inside the whitelisted directories.
+__pycache__/
+*.pyc

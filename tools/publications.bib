@@ -1,3 +1,20 @@
+% =====================================================================
+% CANONICAL BIB: cv/source/mybib.bib in the Tenure workspace.
+% This one file feeds both the CV and lybargerlanguagelab.org.
+% Full conventions: cv/_playbook/bib-conventions.md (Tenure workspace).
+%
+% pubstate: absent = published. submitted | inpress (accepted, not yet
+%   out) | rejected (kept for the record) | hidden (kept, never listed).
+% keywords: selected (site's Selected Publications cards) | poster |
+%   abstract | nonrefereed | talk | include (force-include when the lab
+%   authors are truncated inside "and others").
+% award: free text, e.g. {Outstanding Paper Award}.
+% note: printable prose ONLY (links, PMIDs, footnotes). Never status
+%   words; status lives in pubstate.
+% Author markers are data: \textbf{K. Lybarger} = Kevin, \uline{...} =
+%   lab member. The site drops entries with neither unless keywords
+%   contains include. Banner comments are navigation, not meaning.
+% =====================================================================
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SUBMITTED PAPERS
@@ -6,28 +23,28 @@
 
 
 @article{Alemi2026demi,
+  pubstate = {submitted},
   author       = {Alemi, Farrokh and Lin, Yili and \uline{H. R. A. Elyazori} and Cardenas, Vladimir Franzuela and Ramezani, Niloofar and \textbf{K. Lybarger}},
   title        = {Causal {AI} Reasoning: Direct Effects Multiplicative Inference Algorithm},
   journal      = {Journal of Biomedical Informatics},
-  note         = {Under review},
   year         = {2026},
   doi          = {10.2139/ssrn.6537875},
 }
 
 @article{lin2026potential,
+  pubstate = {rejected},
   title     = {Potential Outcome of {AI}'s Advice for Treatment of Major Depressive Disorder},
   author    = {Lin, Yili and Mansouri, Sina and Cardenas, Vladimir and Resapu, Keerti Reddy and \uline{M. T. R. Shawon} and Eklou, K. Pierre and Ursani, Aneel and \textbf{K. Lybarger} and Alemi, Farrokh},
   journal   = {npj Digital Public Health},
   year      = {2026},
-  note      = {Submitted}
 }
 
 @article{shawon2026advancing,
+  pubstate = {submitted},
   title={Advancing {AI} Trustworthiness Through Patient Simulation: Risk Assessment of Conversational Agents for Antidepressant Selection},
   author={\uline{M. T. R. Shawon} and \uline{M. S. Irbaz} and \uline{H. R. A. Elyazori} and Resapu, Keerti Reddy and Lin, Yili and Cardenas, Vladimir Franzuela and Alemi, Farrokh and \textbf{K. Lybarger}},
-  journal={ACM Transactions on Computing for Healthcare},
+  journal={JMIR AI},
   year={2026},
-note={Under review}
 }
 
 
@@ -35,51 +52,40 @@ note={Under review}
 
 
 @inproceedings{elyazori2026aces,
+  pubstate = {rejected},
   title={{ACES}: Anchored Coordination and Effective Semantics for Annotation in Ambiguous Domains},
   author={\uline{H. R. A. Elyazori} and Abdulrazzaq, Rusul and Mitchell, Ande Leonard and Nguyen, Blessing and Sreedevi-Naresh, Sasanka and Krafsig, Stephanie Elizabeth and Rossi, Thomas H. and Shah, Jay and Gerber, Lynn H. and DeStefano, Secili and Sikdar, Siddhartha and Acu{\~n}a, Samuel and \textbf{K. Lybarger}},
   booktitle={Proceedings of the Association for Computational Linguistics},
   year={2026},
-  note={Under review}
 }
 
 
 @inproceedings{rahman2026attckr,
+  pubstate = {inpress},
   title={{ATTCK-R}: Knowledge-Aware Long-Horizon Jailbreaking for Protected LLMs},
   author={\uline{M. M. Rahman} and Rohde, Tobias and Tripathi, Rahul and Elkhalil, Khalil and \textbf{K. Lybarger}},
-  booktitle={Proceedings of the Association for Computational Linguistics},
+  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing},
   year={2026},
-  note={Under review}
 }
 
 
 
 @article{Alemi2025DataDrivenAntidepressants,
+  pubstate = {rejected},
   title        = {Data-Driven Selection of Antidepressants: External Validation of Predictive {AI} Models},
   author       = {Alemi, Farrokh and Resapu, Keerti and \textbf{K. Lybarger} and Cardenas, Vladimir},
   journal      = {Journal of Affective Disorders},
   year         = {2025},
-  note         = {Under review},
 }
 
 
-@article{albanese2025towards,
-  author = {Albanese, Massimiliano and Ou, Xinming and \textbf{K. Lybarger} and Lende, Daniel and Goldgof, Dmitry},
-  title = {Towards {AI}-Driven Human-Machine Co-Teaming for Adaptive and Agile Cyber Security Operation Centers},
-  journal = {ACM Transactions on Internet Technology},
-  volume = {1},
-  number = {1},
-  pages = {1--19},
-  month = {May},
-  year = {2025},
-  note={Under review}
-}
 
 @article{alemi2024suicideJMIR,
+  pubstate = {rejected},
   title={Passive Methods of Monitoring Suicide Risk in {AI} Conversations},
   author={Farrokh Alemi and Arman Fard and Mathew Richardson and Haley Raybin and \textbf{K. Lybarger} and Gary L. Kreps and Priya Nambisan and Yan Leykin},
   journal={Journal of Medical Internet Research},
   year={2025},
-  note={Under review}
 }
 
 
@@ -99,52 +105,52 @@ note={Under review}
 
 
 @article{resapu2025ai_addiction_pcps,
+  pubstate = {rejected},
   title        = {{AI}'s Role in Addressing Addiction by Primary Care Providers},
   author       = {Resapu, Keerti Reddy and Cardenas, Vladimir Franzuela and Lin, Yili and Ursani, Aneel and Eklou, K. Pierre and \textbf{K. Lybarger} and Alemi, Farrokh},
   year         = {2025},
   journal         = {Journal of Addiction Medicine},
-  note         = {Rejected},
 }
 
 @article{Alemi2025DataDrivenAntidepressantsNEJM,
+  pubstate = {rejected},
   title        = {Data-Driven Selection of Antidepressants: External Validation of Predictive {AI} Models},
   author       = {Alemi, Farrokh and Resapu, Keerti and \textbf{K. Lybarger} and Cardenas, Vladimir},
   journal      = {NEJM AI},
   year         = {2025},
-  note         = {Rejected},
 }
 
 
 @article{alemi2024suicide2,
+  pubstate = {rejected},
   title={A Method to Detect Suicide Risk in Dialogues and Patient Descriptions},
   author={Farrokh Alemi and Arman Fard and Mathew Richardson and Haley Raybin and \textbf{K. Lybarger} and Gary L. Kreps and Priya Nambisan and Yan Leykin},
   journal={Suicide and Life-Threatening Behavior},
   year={2024},
-  note={Rejected}
 }
 
 @article{park2024comparison_fail,
+  pubstate = {rejected},
   title={Comparison of Machine Learning Approaches to Identify Imaging Follow-up},
   author={Namu Park{\dag} and Giridhar Kaushik Ramachandran{\dag} and \textbf{K. Lybarger} and Fei Xia  and {\"O}zlem Uzuner and Meliha Yetisgen  and Martin Gunn},
-  journal={Radiology Artificial Intelligence},
+  journal={Radiology: Artificial Intelligence},
   year={2024},
-  note={Rejected}
 }
 
 @article{alemi2024suicide,
+  pubstate = {rejected},
   title={A Method to Detect Suicide Risk in Dialogues and Patient Descriptions},
   author={Farrokh Alemi and Arman Fard and Mathew Richardson and Haley Raybin and \textbf{K. Lybarger} and Gary L. Kreps and Priya Nambisan and Yan Leykin},
   journal={Archives of Suicide Research},
   year={2024},
-  note={Rejected}
 }
 
 @article{alemi2024comparison,
+  pubstate = {rejected},
   title={Artificial Autonomous Clinician for Management of Major Depression: Initial Design, Progress, and Research Plans},
   author={Farrokh Alemi and Janusz Wojtusiak and Aneel Ursani and K. Pierre Eklou and \textbf{K. Lybarger}},
-  journal={World Psychiatry Journal},
+  journal={World Psychiatry},
   year={2024},
-  note={Rejected},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,7 +191,8 @@ month={May},
 day={14},
 volume={5},
 pages={e73481},
-doi={10.2196/73481}
+doi={10.2196/73481},
+  note={(\textsuperscript{\dag}authors contributed equally)}
 }
 
 @article{khan2026hpvPLOS,
@@ -225,11 +232,18 @@ doi={10.2196/73481}
 
 
 
-@inproceedings{park2025identifying,
+@inproceedings{Park2026Identifying,
   title={Identifying Imaging Follow-Up in Radiology Reports: A Comparative Analysis of Traditional {ML} and {LLM} Approaches},
-  author={Namu Park and Giridhar Kaushik Ramachandran and \textbf{K. Lybarger} and Fei Xia  and {\"O}zlem Uzuner and Meliha Yetisgen  and Martin Gunn},
-  booktitle = "Proceedings of Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
-  year={2026}
+  author={Namu Park and Giridhar Kaushik Ramachandran and \textbf{K. Lybarger} and Fei Xia and {\"O}zlem Uzuner and Martin Gunn and Meliha Yetisgen},
+  editor={Piperidis, Stelios and Bel, N{\'u}ria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  booktitle={Proceedings of the Fifteenth Language Resources and Evaluation Conference},
+  month=may,
+  year={2026},
+  address={Palma de Mallorca, Spain},
+  publisher={ELRA Language Resource Association},
+  pages={7498--7510},
+  doi={10.63317/5eve2chrhdy5},
+  note={\url{https://aclanthology.org/2026.lrec-1.594/}},
 }
 
 @article{cardenas2025bias,
@@ -309,7 +323,7 @@ author={Alemi, Farrokh and \textbf{K. Lybarger} and Vang, Jee and Lin, Yili and 
 @article{xie2025patient,
   title={Patient and clinician acceptability of automated extraction of social drivers of health from clinical notes in primary care},
   author={Xie, Serena Jinchen and Spice, Carolin and Wedgeworth, Patrick and Langevin, Raina and \textbf{K. Lybarger} and Singh, Angad and Wood, Brian R. and Klein, Jared W. and Hsieh, Gary and Duber, Herbert C. and Hartzler, Andrea L.},
-  journal={Journal American Medical Informatics Association},
+  journal={Journal of the American Medical Informatics Association},
   year={2025},
   volume={32},
   number={5},
@@ -341,11 +355,14 @@ doi={https://doi.org/10.31083/AP44608}
 doi = {10.1089/sur.2024.266}
 }
 
-@inproceedings{fu2024biomistral,
+@inproceedings{fu2025biomistral,
   title={{BioMistral-NLU}: Towards More Generalizable Medical Language Understanding through Instruction Tuning},
   author={Fu, Yujuan Velvin and Ramachandran, Giridhar Kaushik and Park, Namu and \textbf{K. Lybarger} and Xia, Fei and Uzuner, Ozlem and Yetisgen, Meliha},
   booktitle={AMIA Informatics Summit},
-  year={2024},
+  year={2025},
+  volume={2025},
+  pages={149--158},
+  note={PMID: \href{https://pubmed.ncbi.nlm.nih.gov/40502228}{40502228}. \href{https://pmc.ncbi.nlm.nih.gov/articles/PMC12150714/}{[free-access link]}},
 }
 
 @article{rahman2024health,
@@ -362,7 +379,7 @@ author = {\uline{M. M. Rahman} and \uline{M. S. Irbaz} and Kai North and Michell
 @article{cacer,
   author = {Yujuan Velvin Fu and Giridhar Kaushik Ramachandran and Ahmad Halwani and Bridget T. McInnes and Fei Xia and \textbf{K. Lybarger} and Meliha Yetisgen and  {\"O}zlem   Uzuner},  
   title = {{CACER}: Clinical concept annotations for cancer events and relations},
-JOURNAL = {Journal American Medical Informatics Association},
+JOURNAL = {Journal of the American Medical Informatics Association},
 year = {2024},
   volume={31},
   number={11},
@@ -385,6 +402,7 @@ issn={2184-7711},
 }
 
 @article{elyazori2023exploring,
+  keywords = {nonrefereed},
 title={Exploring Probation and Parole Records Using Natural Language Processing: A Case Study of Supervisory Condition Notes},
 author={\uline{H. R. A. Elyazori} and Teneshia Thurman and \textbf{K. Lybarger} and Faye S. Taxman},
 journal={Federal Probation},
@@ -396,6 +414,7 @@ note={\url{https://www.uscourts.gov/federal-probation-journal/2023/12/exploring-
 
 %booktitle={Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
 @inproceedings{fu2023pedShac,
+  award = {Outstanding Paper Award},
 title={Extracting Social Determinants of Health from Pediatric Patient Notes Using Large Language Models: Novel Corpus and Methods},
 author={Yujuan Fu and Giridhar Kaushik Ramachandran and Nicholas J Dobbins and Namu Park and Michael Leu and Abby R. Rosenberg and \textbf{K. Lybarger} and Fei Xia and {\"O}zlem Uzuner and Meliha Yetisgen},
 booktitle = "Proceedings of Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
@@ -412,7 +431,7 @@ note={\url{https://aclanthology.org/2024.lrec-main.618}},
 % Activity Report Fix – 
 % 
 @inproceedings{namu2023camir,
-title={A Novel Corpus of Annotated Medical Imaging Reports and Information Extraction Results Using Large Language Models}, 
+title={A Novel Corpus of Annotated Medical Imaging Reports and Information Extraction Results Using {BERT}-based Language Models}, 
 author={Namu Park\textsuperscript{\dag} and \textbf{K. Lybarger}\textsuperscript{\dag} and Giridhar Kaushik Ramachandran and Spencer Lewis and Aashka Damani and {\"O}zlem Uzuner and Martin Gunn and Meliha Yetisgen},
 booktitle = "Proceedings of Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
 month = "May",
@@ -420,6 +439,7 @@ year = "2024",
 address = "Torino, Italia",
 publisher = "ELRA and ICCL",
 pages = "1280--1292",
+doi = {10.63317/27bifnamve5g},
 note={\url{https://aclanthology.org/2024.lrec-main.115} (\textsuperscript{\dag}authors contributed equally)}
 }
 
@@ -444,9 +464,10 @@ note={\url{https://ceur-ws.org/Vol-3497/paper-124.pdf}}
 }
 
 @article{sdoh_editorial,
+  keywords = {nonrefereed},
   author = {\textbf{K. Lybarger} and Bear Don’t Walk IV, Oliver J and Yetisgen,  Meliha and Uzuner, {\"O}zlem},  
   title = {Advancements in extracting social determinants of health information from narrative text},
-JOURNAL = {Journal American Medical Informatics Association},
+JOURNAL = {Journal of the American Medical Informatics Association},
 year = {2023},
 doi={10.1093/jamia/ocad121}
 }
@@ -478,7 +499,7 @@ note={\url{https://aclanthology.org/2023.clinicalnlp-1.41}}
 @article{sdoh_autopop,
   author = {Andrea L. Hartzler and Serena Jinchen Xie and Patrick Wedgeworth and Carolin Spice and \textbf{K. Lybarger} and others},  
   title = {Integrating patient voices into the automatic extraction of social determinants of health from clinical records: Ethical considerations and recommendations},
-JOURNAL = {Journal American Medical Informatics Association},
+JOURNAL = {Journal of the American Medical Informatics Association},
 year = {2023},
   volume={30},
   number={8},
@@ -491,7 +512,7 @@ note={\href{https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/oca
 @article{sdoh_ehr_case_study,
   author = {\textbf{K. Lybarger}\textsuperscript{\dag} and Dobbins\textsuperscript{\dag}, Nicholas J and Long, Ritche and Singh, Angad and Wedgeworth, Patrick and Uzuner, {\"O}zlem and Yetisgen, Meliha},  
   title = {Leveraging Natural Language Processing to Augment Structured Social Determinants of Health Data in the Electronic Health Record},
-  JOURNAL = {Journal American Medical Informatics Association},
+  JOURNAL = {Journal of the American Medical Informatics Association},
   year = {2023},
   volume={30},
   number={8},
@@ -505,7 +526,7 @@ note={\href{https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/oca
 @Article{n2c2_sdoh,
 AUTHOR = {\textbf{K. Lybarger} and Meliha Yetisgen and {\"O}zlem Uzuner},
 TITLE = {The 2022 n2c2/{UW} shared task on extracting social determinants of health},
-JOURNAL = {Journal American Medical Informatics Association},
+JOURNAL = {Journal of the American Medical Informatics Association},
 year = {2023},
 doi = {10.1093/jamia/ocad012},
  volume={30},
@@ -517,6 +538,7 @@ note= {\href{https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/oc
 %doi = {10.3390/cancers14235756}
 %note = {doi: \href{https://doi.org/10.3390/cancers14235756}{10.3390/cancers14235756}}  
 @Article{cancers14235756,
+  keywords = {include},
 AUTHOR = {Zigman Suchsland, Monica and Kowalski, Lesleigh and Burkhardt, Hannah A. and Prado, Maria G. and Kessler, Larry G. and others},
 TITLE = {How Timely Is Diagnosis of Lung Cancer? Cohort Study of Individuals with Lung Cancer Presenting in Ambulatory Care in the {U}nited {S}tates},
 JOURNAL = {Cancers},
@@ -530,6 +552,7 @@ doi = {10.3390/cancers14235756}
 % Abstract   
 
 @article{zhang2024semiposter,
+  keywords = {abstract},
   title={Semi-Automated Topic Identification for Radiation Oncology Safety Event Reports Using Natural Language Processing and Statistical Modeling},
   author={Zhang, Qian Sophia and Kang, John and \textbf{K. Lybarger} and Glenn, Mallory C. and Sponseller, Patricia and Blau, Kathryn Havard and Ford, Eric},
   journal={International Journal of Radiation Oncology, Biology, Physics},
@@ -538,6 +561,7 @@ doi = {10.3390/cancers14235756}
 }
 
 @InProceedings{camirAbstract2022,
+  keywords = {abstract},
   title   = "A Corpus of Radiology Reports From Multiple Imaging Modalities With Fine-grained Event-based Annotations",
   author  = "\textbf{K. Lybarger} and Namu Park and Sitong Zhou and Aashka Damani and Alison White and Jagjeet K. Gill",
   booktitle = "AMIA Annual Symposium Proceedings",
@@ -545,15 +569,18 @@ doi = {10.3390/cancers14235756}
 }   
 
 @misc{amia_camir_2022,
+  keywords = {talk},
+  key = {Lybarger},
   title        = "A Corpus of Radiology Reports From Multiple Imaging Modalities With Fine-grained Event-based Annotations",
   howpublished = "AMIA Annual Symposium (podium presentation)",
-  year         = {Nov. 2022},
+  year         = {2022},
+  month        = {November},
 }
 
 @article{event_rad_2022,
   title   = "Event-based clinical findings extraction from radiology reports with pre-trained language model",
   author  = "W Lau and \textbf{K. Lybarger} and M Gunn and M Yetisgen",
-  journal = "Journal Digital Imaging",
+  journal = "Journal of Digital Imaging",
   year    = {2022},
   doi = {10.1007/s10278-022-00717-5}
 }   
@@ -561,7 +588,7 @@ doi = {10.3390/cancers14235756}
 @article{kaushik2022extracting,
   title={Extracting Medication Changes in Clinical Narratives using Pre-trained Language Models},
   author={G. K. Ramachandran and \textbf{K. Lybarger} and Liu, Yaya and Mahajan, Diwakar and Liang, Jennifer J and others},
-  journal={Journal Biomedical Informatics},
+  journal={Journal of Biomedical Informatics},
   year={2023},
   volume={139},
   pages={104302},  
@@ -577,6 +604,7 @@ doi = {10.3390/cancers14235756}
 }   
 
 @article{pradoSymptoms2022,
+  keywords = {include},
 author = {Maria G Prado and Larry G Kessler and Margaret A Au and Hannah A Burkhardt and Monica Zigman Suchsland and others},
 title = {Symptoms and signs of lung cancer prior to diagnosis: case-control study using electronic health records from ambulatory care within a large {US}-based tertiary care centre},
 volume = {13},
@@ -611,6 +639,8 @@ journal = {BMJ Open}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 @misc{isoqol_2025,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = {Advancing Patient-Centered Care Through Understanding \& Engagement},
   howpublished = {Plenary Session, Breaking Tradition: Disrupting Quality of Life Research with {AI}, \emph{International Society for Quality of Life Research Annual Conference, Artificial Intelligence \& the Future of Quality of Life Research}},
   year         = {2025},
@@ -619,6 +649,8 @@ journal = {BMJ Open}
 }
 
 @misc{jhu_sdoh_2024,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Extracting Social Determinants of Health: Annotation, Extraction, Information Gain, and Ethical Considerations",
   howpublished = "\textit{Biomedical Informatics \& Data Science Grand Rounds, Johns Hopkins University Medicine}",
   year         = {2024},
@@ -627,14 +659,18 @@ journal = {BMJ Open}
 }
 
 @misc{yale_sdoh_2023,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Extracting Social Determinants of Health: Annotation, Extraction, Information Gain, and Ethical Considerations",
-  howpublished = "\textit{Yale College of Public Health, Biostatistics  Seminar}",
+  howpublished = "\textit{Yale School of Public Health, Biostatistics Seminar}",
   year         = {2023},
   month        = {November},
   note         = {\textbf{[Invited talk]}},
 }
 
 @misc{harvard_sdoh_2023,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Extracting Social Determinants of Health: Annotation, Extraction, Information Gain, and Ethical Considerations",
   howpublished = "\textit{Boston Children's Hospital Computational Health Informatics Program (CHIP) \& Harvard Medical School}",
   year         = {2023},
@@ -643,6 +679,8 @@ journal = {BMJ Open}
 }
 
 @misc{jamia_jc_leveraging_2023,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Leveraging natural language processing to augment structured social determinants of health data in the electronic health record",
   howpublished = "\textit{JAMIA Journal Club}",
   year         = {2023},
@@ -651,6 +689,8 @@ journal = {BMJ Open}
 }
 
 @misc{nlm_t15_2022,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Extracting Radiological Findings from Medical Imaging Reports",
   howpublished = "\textit{National Library of Medicine (NLM) T15 Training Conference}",
   year         = {2022},
@@ -658,6 +698,8 @@ journal = {BMJ Open}
 }
 
 @misc{nlm_t15_2021,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Identifying {ARDS} in Chest Radiograph Reports",
   howpublished = "\textit{National Library of Medicine (NLM) T15 Training Conference}",
   year         = {2021},
@@ -665,6 +707,8 @@ journal = {BMJ Open}
 }
 
 @misc{sdoh_csde_2021,
+  keywords = {talk, invited},
+  key = {Lybarger},
   title        = "Annotating Social Determinants of Health Using Active Learning, and Characterizing Determinants Using Neural Event Extraction",
   howpublished = "\textit{University of Washington Center for Studies in Demography \& Ecology Seminar Series}",
   year         = {2021},
@@ -677,27 +721,39 @@ journal = {BMJ Open}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 @misc{ai_gov_2025,
+  keywords = {talk},
+  key = {Lybarger},
   title        = "{AI} and Language: Transforming Health and Critical Infrastructures",
   howpublished = "\textit{George Mason University's {AI}-in-Gov Council Launch Event}",
-  year         = {Jan. 2025},
+  year         = {2025},
+  month        = {January},
 }
 
 @misc{hands_on_ai_2024,
+  keywords = {talk},
+  key = {Lybarger},
   title        = "Introduction to {LLMs} and Their Capabilities",
   howpublished = "\textit{CEC Innovation Week / Hands-on Generative {AI} Workshop}",
-  year         = {Feb. 2024},
+  year         = {2024},
+  month        = {February},
 }
 
 @misc{cahmp_2023,
+  keywords = {talk},
+  key = {Lybarger},
   title        = "NLP for Improved Data Utilization, Information Accessibility, and Information Integrity",
   howpublished = "\textit{Center for Advancing Human-Machine Partnership (CAHMP) Social Talk}",
-  year         = {Dec. 2023},
+  year         = {2023},
+  month        = {December},
 }
 
 @misc{ist_advisory_board_2023,
+  keywords = {talk},
+  key = {Lybarger},
   title        = "Research Overview",
   howpublished = "\textit{Information Science and Technology's Advisory Board Meeting}",
-  year         = {Nov. 2023},
+  year         = {2023},
+  month        = {November},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -705,26 +761,27 @@ journal = {BMJ Open}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 @inproceedings{abdulrazzaq2026capturing,
+  keywords = {poster},
   author    = {Abdulrazzaq, Rusul and \uline{H. R. A. Elyazori} and Krafsig, Stephanie and Mitchell, Ande and Nguyen, Blessing and Rossi, Thomas and Sreedevi-naresh, Sasanka and Acuna, Samuel and \textbf{K. Lybarger}},
   title     = {Capturing the Lived Experiences of Individuals with Chronic Pain through Motivational Interviewing},
   booktitle = {National Conference on Undergraduate Research (NCUR)},
   year      = {2026},
   address   = {Richmond, VA},
   month     = apr,
-  note      = {Poster presentation}
 }
 
 @inproceedings{abdulrazzaq2026extracting,
+  keywords = {poster},
   author    = {Abdulrazzaq, Rusul and \uline{H. R. A. Elyazori} and Krafsig, Stephanie and Mitchell, Ande and Nguyen, Blessing and Rossi, Thomas and Sreedevi-naresh, Sasanka and Acuna, Samuel and \textbf{K. Lybarger}},
   title     = {Extracting Biopsychosocial Insights from Motivational Interview Transcripts on Chronic Pain Using Natural Language Processing},
   booktitle = {National Conference on Undergraduate Research (NCUR)},
   year      = {2026},
   address   = {Richmond, VA},
   month     = apr,
-  note      = {Poster presentation}
 }
 
 @inproceedings{resapu2025evaluating_apha,
+  keywords = {poster},
   author       = {Keerti Reddy Resapu and Farrokh Alemi and \textbf{K. Lybarger} and Vladimir Franzuela Cardenas},
   title        = {Evaluating the Effectiveness of {AI}-Powered Antidepressant Recommendations Personalizing Depression Care},
   booktitle    = {American Public Health Association Annual Meeting \& Expo},
@@ -734,6 +791,7 @@ journal = {BMJ Open}
 }
 
 @InProceedings{zhang2025semiautomatedposter,
+  keywords = {poster},
   title={Semi-Automated Topic Identification for Radiation Oncology Safety Event Reports Using Natural Language Processing and Statistical Models},
   author={Q.S. Zhang and J. Kang and \textbf{K. Lybarger} and M. Glenn and P.A. Sponseller and K.H. Blau and E.C. Ford},
   booktitle = {Annual Meeting of the American Society for Radiation Oncology},
@@ -741,6 +799,7 @@ journal = {BMJ Open}
 }
 
 @InProceedings{abdulrazzaq2025capturing,
+  keywords = {poster},
   title={Capturing Lived Experiences of Chronic Pain through a Listening Experience Model},
   author={Abdulrazzaq, Rusul and Al Shawi, Hana and King, Patrick and Manns, Syleah and Amouzou, Isaac Paki Elom and Popal, Mahdia and \textbf{K. Lybarger} and Acuña, Samuel},
   booktitle = {National Conference on Undergraduate Research},
@@ -749,64 +808,66 @@ journal = {BMJ Open}
 }
 
 @inproceedings{irbaz2024ocr,
+  keywords = {poster},
   title = {Optical Character Recognition for Information Extraction from Handwritten Assault and Violence Reports},
   author = {\uline{M. S. Irbaz} and \uline{M. M. Rahman} and Katherine Scafide and David Lattanzi and Janusz Wojtusiak and \textbf{K. Lybarger}},
   booktitle = {AMIA Symposium Workshop: Using Data Science and {AI} to Advance Violence and Injury Prevention},
   year = {2024},
-  note = {[poster] Submitted 10/15/24}
 }
 
 @InProceedings{abdulrazzaq2024capturing,
+  keywords = {poster},
   title={Capturing Lived Experiences of Chronic Pain through a Listening Experience Model},
   author={Abdulrazzaq, Rusul and Al Shawi, Hana and King, Patrick and Manns, Syleah and Amouzou, Isaac Paki Elom and Popal, Mahdia and \textbf{K. Lybarger} and Acuña, Samuel},
   booktitle = {Biomedical Engineering Society Annual Meeting},
   year={2024},
-  note = "[poster]"
 }
 
 @InProceedings{rahman2024textSimpPoster,
+  keywords = {poster},
     title   = "Health Text Simplification: An Annotated Corpus for Digestive Cancer Education \& Novel Strategies for Reinforcement Learning",
     author  = "\uline{M. M. Rahman} and \uline{M. S. Irbaz} and Kai North and Michelle S. Williams and Marcos Zampieri and \textbf{K. Lybarger}",
     booktitle = "National Cancer Institute Junior Investigator Meeting",
     year = {2024},
-note = "[poster]"
 }
 
 @InProceedings{alemi2024removed,
+  keywords = {poster},
   title   = "Removed Algorithm Bias in Selection of Antidepressants",
   author  = "Farrokh Alemi and \textbf{K. Lybarger} and Niloofar Ramezani and Vladimir Franzuela Cardenas and Rachael Christine King",
   booktitle = "{AI} for Health Equity Symposium  {AIM-AHEAD} Annual Meeting",
   year = {2024},
-  note = "[poster]"
 }
 
 @InProceedings{dmonte2024modeling,
+  keywords = {poster},
   title   = "Modeling Election-Related Claims in Social Media in the Age of {LLMs}",
   author  = "A. Dmonte and M. Zampieri and \textbf{K. Lybarger} and M. Albanese",
   booktitle = "Commonwealth Cyber Initiative (CCI) Symposium",
   year = {2024},
-  note={\url{https://cyberinitiative.org/events-programs/2024/cci-symposium-2024/symposium-2024-paper-presentation-schedule.html} [poster]}
+  note={\url{https://cyberinitiative.org/events-programs/2024/cci-symposium-2024/symposium-2024-paper-presentation-schedule.html}}
 }
 
 % Abstract   
 @InProceedings{SSI_abstract_2021,
+  keywords = {abstract},
   title   = "Automatic Detection of Surgical Site Infections Using {EHR} Data",
   author  = "Arjun Chakraborty and \textbf{K. Lybarger} and Dustin Long and Vikas N. O'Reilly-Shah and Meliha Yetisgen",
   booktitle = "AMIA Annual Symposium Proceedings",
   year = {2021},
-  note = "[poster]"
 }   
 
 % Abstract   
 @InProceedings{Dialogue_abstract_2021,
+  keywords = {abstract},
   title   = "An exploration of information extraction models on transcribed patient visits",
   author  = "\textbf{K. Lybarger} and Erica Qiao and Meliha Yetisgen",
   booktitle = "AMIA Annual Symposium Proceedings",
   year = {2021},
-  note = "[poster]"
 }   
 
 @InProceedings{RadAnatomy_AMIA_2022,
+  award = {Student Paper Competition Finalist},
   title   = "Extracting Radiological Findings With Normalized Anatomical Information Using a Span-Based {BERT} Relation Extraction Model",
   author  = "\textbf{K. Lybarger} and Aashka Damani and Martin Gunn and {\"O}zlem Uzuner and Meliha Yetisgen",
   booktitle = "AMIA Informatics Summit",
@@ -826,7 +887,7 @@ note = "[poster]"
 @article{COVID_jbi_2020,
   title   = "Extracting {COVID}-19 Diagnoses and Symptoms From Clinical Text: A New Annotated Corpus and Neural Event Extraction Framework",
   author  = "\textbf{K. Lybarger} and Mari Ostendorf and Matthew Thompson and Meliha Yetisgen",
-  journal = "Journal Biomedical Informatics",
+  journal = "Journal of Biomedical Informatics",
   year    = {2021},
   doi = {10.1016/j.jbi.2021.103761}
 }   
@@ -835,7 +896,7 @@ note = "[poster]"
 @article{SHAC_jbi_2020,
   title   = "Annotating Social Determinants of Health Using Active Learning, and Characterizing Determinants Using Neural Event Extraction",
   author  = "\textbf{K. Lybarger} and Mari Ostendorf and Meliha Yetisgen",
-  journal = "Journal Biomedical Informatics",
+  journal = "Journal of Biomedical Informatics",
   volume = {113},
   pages = {103631},
   year = {2021},
@@ -844,6 +905,7 @@ note = "[poster]"
 
 % Abstract   
 @InProceedings{SHAC_abstract_2020,
+  keywords = {abstract},
   title   = "A Novel Corpus With Detailed Annotations of Social Determinants of Health",
   author  = "\textbf{K. Lybarger} and Elizabeth Chang and Kylie Kerker and Jolie Shen and Erica Qiao  and others",
   booktitle = "AMIA Annual Symposium Proceedings",
@@ -852,6 +914,7 @@ note = "[poster]"
 
 % Abstract
 @InProceedings{CACT_abstract_2020,
+  keywords = {abstract},
   title   = {Extracting {COVID}-19 Diagnoses and Symptoms from Clinical Text},
   author  = "\textbf{K. Lybarger} and Nicholas Dobbins and Mari Ostendorf and Matthew Thompson and Meliha Yetisgen",
   booktitle = "AMIA NLP Working Group",
@@ -860,6 +923,7 @@ note = "[poster]"
 
 % Abstract   
 @InProceedings{SDOH_poster_2019,
+  keywords = {poster},
   title   = "Automatic Identification of Social Determinants of Health from Clinical Records",
   author  = "\textbf{K. Lybarger} and Mari Ostendorf and {\"O}zlem Uzuner and Meliha Yetisgen",
   booktitle = "AMIA Annual Symposium Proceedings",
@@ -868,6 +932,7 @@ note = "[poster]"
 
 % Abstract/dissertation
 @InProceedings{AMIA_NLP_WG_2018,
+  keywords = {abstract},
   title   = "Extracting social behavioral factors from free-text clinical notes",
   author  = "\textbf{K. Lybarger}",
   booktitle = "AMIA NLP Working Group",
@@ -901,7 +966,7 @@ note = "[poster]"
 @article{VGEENS_main_2018,
   title   = "Using voice to create inpatient progress notes: effects on note timeliness, quality, and physician satisfaction",
   author  = "Thomas Payne and David  Alonso and Andrew  Markiel and \textbf{K. Lybarger} and Ross Lordon and others",
-  journal = "Journal American Medical Informatics Association Open",
+  journal = "JAMIA Open",
   year    = {2018},
   volume  = {1},
   number  = {2},
@@ -910,6 +975,7 @@ note = "[poster]"
 }
 
 @InProceedings{VIP_ASEE_2017,
+  keywords = {include},
   title   = {{Vertically Integrated Projects (VIP) programs: multidisciplinary projects with homes in any discipline}},
   author  = "Behnaam Aazhang and Randal Abler and Jan  Allebach and L.  Bost and Joseph  Cavallaro and others",
   booktitle = "ASEE Annual Conference and Exposition",
@@ -922,6 +988,7 @@ note = "[poster]"
 
 % Abstract
 @InProceedings{VGEENS_main_podium_2017,
+  keywords = {abstract},
   title   = "Improving electronic inpatient progress notes using voice: results from the {VGEENS} project",
   author  = "Thomas Payne and Andrew Markiel and David Alonso and Ross Lordon and \textbf{K. Lybarger} and others",
   booktitle = "AMIA Annual Symposium Proceedings",
@@ -932,7 +999,7 @@ note = "[poster]"
 @article{VGEENS_system_2017,
   title   = "Using voice to create hospital progress notes: description of a mobile application and supporting system integrated with a commercial electronic health record",
   author  = "Thomas Payne and David Alonso and Andrew Markiel and \textbf{K. Lybarger} and Andrew White",
-  journal = "Journal Biomedical Informatics",
+  journal = "Journal of Biomedical Informatics",
   volume  = "77",
   number  = {},
   pages   = "91-96",
@@ -956,15 +1023,14 @@ note = "[poster]"
   title   = "Advances in Wind Turbine Site Assessment",
   author  = "David Malcolm and \textbf{K. Lybarger} and Gordon Randall",
   booktitle = "AIAA Aerospace Sciences Meeting",
-  volume  = {},
-  number  = {},
-  pages   = {456},
+  number  = {AIAA 2011-456},
   year    = {2011},
   doi = {10.2514/6.2011-456}
 }
 
 % Poster
 @InProceedings{quantifying_uncertainty_2010,
+  keywords = {poster},
   title   = "Quantifying uncertainty in turbine suitability assessments",
   author  = "Gordon Randall and David Malcolm and \textbf{K. Lybarger} and Matt Malkin",
   booktitle = "American Wind Energy Association WINDPOWER",
@@ -973,6 +1039,7 @@ note = "[poster]"
 
 % Poster
 @InProceedings{site_suitability_2010,
+  keywords = {poster},
   title   = "Site suitability using generic wind turbine models",
   author  = "David Malcolm and \textbf{K. Lybarger}",
   booktitle = "American Wind Energy Association WINDPOWER",
