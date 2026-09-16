@@ -182,6 +182,30 @@ a:hover { color: var(--green-dark); }
 
 .btn:hover { background: var(--green-dark); color: #fff; }
 
+/* ---------- notice block (standing announcements, e.g. recruiting) ---------- */
+
+.notice {
+  background: var(--bg-soft);
+  border-left: 4px solid var(--green);
+  border-radius: 0 4px 4px 0;
+  padding: 1.1rem 1.4rem 1.2rem;
+  margin: 2.25rem 0;
+  max-width: 46rem;
+}
+
+.notice h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.25rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.notice p { margin: 0 0 0.8rem; }
+
+.notice p:last-child { margin-bottom: 0; }
+
+.notice:target { outline: 3px solid var(--gold); outline-offset: 3px; }
+
 /* ---------- cards (people, projects, home team strip) ---------- */
 
 .cards {
