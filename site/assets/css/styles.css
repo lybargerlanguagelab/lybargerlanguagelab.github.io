@@ -257,6 +257,52 @@ a:hover { color: var(--green-dark); }
 
 .person-wide .person-bio { font-size: 1rem; }
 
+/* People cards link to member pages. Photo and name share one anchor on
+   the grid cards (same reasoning as .team-strip a). On the wide faculty
+   entry the grid separates them, so the photo gets its own anchor, hidden
+   from keyboard and assistive tech (tabindex=-1, aria-hidden) so the name
+   link stays the single target. */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link h3,
+h3 > .card-link { color: var(--green); }
+
+.card-link:hover h3,
+.card-link:focus-visible h3,
+h3 > .card-link:hover,
+h3 > .card-link:focus-visible { text-decoration: underline; }
+
+/* Hovering the wide entry's photo underlines its name too. */
+.person-wide:has(> .card-link:hover) h3 > .card-link { text-decoration: underline; }
+
+.card-link:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.person-teaser { font-size: 0.95rem; margin: 0 0 0.4rem; }
+
+.interests {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.interests strong { color: var(--text); font-weight: 600; }
+
+/* Member page header: the same two-column block as the wide People entry,
+   with an h1 in place of the h3. */
+.member-header { margin-bottom: 1.5rem; }
+
+.member-header h1 { margin: 0 0 0.1rem; }
+
+.member-header .role { color: var(--muted); margin: 0 0 0.5rem; }
+
 .hero-img {
   display: block;
   width: 100%;

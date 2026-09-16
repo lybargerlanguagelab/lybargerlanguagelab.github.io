@@ -61,6 +61,10 @@ KEYWORDS = {
     "include": None,       # lab hidden inside "and others"; include anyway
     "talk": None,          # talk, not a publication; see "invited"
     "invited": None,       # with "talk": render on the personal page
+    "workshop": None,      # refereed workshop paper; accepted but unrouted
+                           # until the display decision lands (decision log,
+                           # open item 2026-08-31); entries fall through to
+                           # their entry-type section meanwhile
     "poster": "abstracts",
     "abstract": "abstracts",
     "nonrefereed": "nonrefereed",

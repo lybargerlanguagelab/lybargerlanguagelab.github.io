@@ -1,9 +1,11 @@
-# Only the deployable site and the publications toolchain are public.
+# Only the deployable site, the publications toolchain, and the
+# contributing guide are public.
 # Everything else in this workspace (governance, planning, archives,
 # incoming artifacts) stays local.
 /*
 !/.gitignore
 !/.gitattributes
+!/CONTRIBUTING.md
 !/site/
 !/tools/
 
