@@ -524,7 +524,7 @@ details.pub-collapse summary h2 {
 .badge {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.5rem;
+  margin-right: 0.4rem;
   padding: 0.15rem 0.55rem;
   border-radius: 999px;
   background: var(--green);
