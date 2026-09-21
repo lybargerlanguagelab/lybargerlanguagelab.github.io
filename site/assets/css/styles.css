@@ -532,6 +532,31 @@ details.pub-collapse summary h2 {
 
 .project:last-of-type { border-bottom: none; }
 
+.paper-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.9rem 0 0;
+}
+
+.paper-links a,
+.paper-links .no-link {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.paper-links a { color: var(--text); text-decoration: none; }
+
+.paper-links a:hover,
+.paper-links a:focus-visible { border-color: var(--green); color: var(--green); }
+
+.paper-links .no-link { color: var(--muted); }
+
 .project h2 { border: none; margin: 0 0 0.4rem; padding: 0; }
 
 .project .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.5rem; }
