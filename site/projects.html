@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects - Lybarger Language Lab</title>
-<meta name="description" content="Current research projects of the Lybarger Language Lab: conversational AI for depression management, and understanding chronic pain through patient language.">
+<title>Projects &amp; Research Areas - Lybarger Language Lab</title>
+<meta name="description" content="Funded projects and ongoing research areas of the Lybarger Language Lab: conversational AI for depression management, chronic pain, clinical information extraction, and more.">
 <meta property="og:site_name" content="Lybarger Language Lab">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Projects - Lybarger Language Lab">
-<meta property="og:description" content="Current research projects of the Lybarger Language Lab: conversational AI for depression management, and understanding chronic pain through patient language.">
+<meta property="og:title" content="Projects &amp; Research Areas - Lybarger Language Lab">
+<meta property="og:description" content="Funded projects and ongoing research areas of the Lybarger Language Lab: conversational AI for depression management, chronic pain, clinical information extraction, and more.">
 <meta property="og:url" content="https://www.lybargerlanguagelab.org/projects.html">
 <meta property="og:image" content="https://www.lybargerlanguagelab.org/assets/images/social-card.png">
 <meta property="og:image:alt" content="Lybarger Language Lab: natural language processing and AI for health, George Mason University">
@@ -36,10 +36,24 @@
 </header>
 <main id="main" class="wrap">
 
-<h1>Projects</h1>
-<p class="lede">Two funded projects are the lab's current focus: evaluating whether conversational AI can give trustworthy guidance on depression treatment, and studying how patients describe chronic pain in their own words. Earlier and ongoing work appears on the <a href="publications.html">Publications</a> page.</p>
+<h1>Projects &amp; Research Areas</h1>
+<p class="lede">Two funded projects are the lab's current focus: evaluating whether conversational AI can give trustworthy guidance on depression treatment, and studying how patients describe chronic pain in their own words. Below that sit the recurring research threads that run across our publications, often spanning several funding sources and years. Full citations for everything here are on the <a href="publications.html">Publications</a> page.</p>
 
-<article class="project project-media">
+<nav class="area-nav" aria-label="Jump to a project or research area">
+  <ul>
+    <li><a href="#depression-ai">Depression Management AI</a></li>
+    <li><a href="#chronic-pain">Chronic Pain</a></li>
+    <li><a href="#sdoh">Social Determinants of Health</a></li>
+    <li><a href="#radiology">Radiology Report Extraction</a></li>
+    <li><a href="#cognitive-distortions">Cognitive Distortions</a></li>
+    <li><a href="#health-literacy">Health Literacy &amp; Simplification</a></li>
+    <li><a href="#ai-safety">AI Safety &amp; Trustworthiness</a></li>
+  </ul>
+</nav>
+
+<h2>Funded Projects</h2>
+
+<article class="project project-media" id="depression-ai">
   <img class="project-figure" src="assets/images/project-depression-ai.svg" alt="" width="320" height="240">
   <div>
     <h2>Conversational AI for Depression Management</h2>
@@ -48,13 +62,76 @@
   </div>
 </article>
 
-<article class="project project-media">
+<article class="project project-media" id="chronic-pain">
   <img class="project-figure" src="assets/images/project-chronic-pain.svg" alt="" width="320" height="240">
   <div>
     <h2>Understanding Chronic Pain through Language</h2>
     <p class="meta">NIH-funded collaboration, $4.65 million (multi-team)</p>
     <p>The lab is part of a George Mason research team studying chronic knee pain, using motivational interviewing and information extraction to capture patients' lived experiences with chronic pain in their own words. Our work develops annotation methods and extraction models for these interview transcripts. Details in the <a href="https://www.gmu.edu/news/2025-09/george-mason-researchers-awarded-465-million-nih-grant-explore-chronic-knee-pain">George Mason announcement</a>.</p>
   </div>
+</article>
+
+<h2>Research Areas</h2>
+<p>These threads recur across the lab's publications rather than mapping to a single grant. [PLACEHOLDER: descriptions below are a first draft grouped from the publication list by topic &mdash; please correct attribution, framing, and which papers count as "representative."]</p>
+
+<article class="project" id="sdoh">
+  <h2>Social Determinants of Health Extraction</h2>
+  <p class="meta">Recurring thread, 2019-present</p>
+  <p>[PLACEHOLDER] Annotation and extraction methods for social determinants of health (housing, employment, substance use, and related factors) in clinical notes, including active-learning annotation, structured-EHR augmentation, and pediatric-note extraction.</p>
+  <ul class="pub-list">
+    <li><a href="https://doi.org/10.1016/j.jbi.2020.103631">Annotating Social Determinants of Health Using Active Learning, and Characterizing Determinants Using Neural Event Extraction</a>. <em>Journal of Biomedical Informatics</em>, 2021.</li>
+    <li><a href="https://doi.org/10.1093/jamia/ocad073">Leveraging Natural Language Processing to Augment Structured Social Determinants of Health Data in the Electronic Health Record</a>. 2023.</li>
+    <li><a href="https://aclanthology.org/2024.lrec-main.618">Extracting Social Determinants of Health from Pediatric Patient Notes Using Large Language Models: Novel Corpus and Methods</a>. <em>LREC-COLING</em>, 2024.</li>
+  </ul>
+  <p><a href="publications.html">See all publications &rarr;</a></p>
+</article>
+
+<article class="project" id="radiology">
+  <h2>Radiology Report Extraction</h2>
+  <p class="meta">Recurring thread, 2022-present</p>
+  <p>[PLACEHOLDER] Information extraction from radiology and imaging reports: normalized anatomical findings, annotated report corpora, and identifying required imaging follow-up.</p>
+  <ul class="pub-list">
+    <li><a href="https://aclanthology.org/2026.lrec-1.594/">Identifying Imaging Follow-Up in Radiology Reports: A Comparative Analysis of Traditional ML and LLM Approaches</a>. <em>LREC</em>, 2026.</li>
+    <li>Extracting Radiological Findings With Normalized Anatomical Information Using a Span-Based BERT Relation Extraction Model. <em>AMIA Informatics Summit</em>, 2022. (<a href="https://pubmed.ncbi.nlm.nih.gov/35854739">PMID: 35854739</a>)</li>
+    <li><a href="https://aclanthology.org/2024.lrec-main.115">A Novel Corpus of Annotated Medical Imaging Reports and Information Extraction Results Using BERT</a>. <em>LREC-COLING</em>, 2024.</li>
+  </ul>
+  <p><a href="publications.html">See all publications &rarr;</a></p>
+</article>
+
+<article class="project" id="cognitive-distortions">
+  <h2>Cognitive Distortions in Clinical Text</h2>
+  <p class="meta">Recurring thread, 2022-present</p>
+  <p>[PLACEHOLDER] Detecting distorted thinking and cognitive biases in patient-therapist text exchanges and spoken language.</p>
+  <ul class="pub-list">
+    <li><a href="https://doi.org/10.18653/v1/2022.clpsych-1.11">Identifying Distorted Thinking in Patient-Therapist Text Message Exchanges by Leveraging Dynamic Multi-Turn Context</a>. <em>CLPsych</em>, 2022.</li>
+    <li><a href="https://doi.org/10.18653/v1/2022.naacl-srw.9">Improving Classification of Infrequent Cognitive Distortions: Domain-Specific Model vs. Data Augmentation</a>. <em>NAACL SRW</em>, 2022.</li>
+    <li><a href="https://doi.org/10.1007/s41347-025-00551-w">Automated Flagging of Cognitive Biases in the Spoken Language of People with Hallucination Experiences</a>. <em>Journal of Technology in Behavioral Science</em>, 2025.</li>
+  </ul>
+  <p><a href="publications.html">See all publications &rarr;</a></p>
+</article>
+
+<article class="project" id="health-literacy">
+  <h2>Health Literacy &amp; Text Simplification</h2>
+  <p class="meta">Recurring thread, 2024-present</p>
+  <p>[PLACEHOLDER] Making health information easier to understand: annotated corpora for patient education, readability-controlled question answering, and efficient extraction for health-communication materials.</p>
+  <ul class="pub-list">
+    <li><a href="https://doi.org/10.1016/j.jbi.2024.104727">Health Text Simplification: An Annotated Corpus for Digestive Cancer Education and Novel Strategies for Reinforcement Learning</a>. <em>Journal of Biomedical Informatics</em>, 2024.</li>
+    <li><a href="https://doi.org/10.1371/journal.pdig.0001275">Efficient Information Extraction Using LLMs and Knowledge Distillation: A Study on HPV Health Communication</a>. <em>PLOS Digital Health</em>, 2026.</li>
+    <li><a href="https://doi.org/10.18653/v1/2025.tsar-1.5">Evaluating Health Question Answering Under Readability-Controlled Style Perturbations</a>. <em>TSAR Workshop</em>, 2025.</li>
+  </ul>
+  <p><a href="publications.html">See all publications &rarr;</a></p>
+</article>
+
+<article class="project" id="ai-safety">
+  <h2>AI Safety &amp; Trustworthiness</h2>
+  <p class="meta">Recurring thread, 2024-present</p>
+  <p>[PLACEHOLDER] Evaluating and improving the safety and trustworthiness of language models: red-teaming and jailbreak resistance, human-vs-AI-generated text classification, and datasets for AI safety research.</p>
+  <ul class="pub-list">
+    <li>ATTCK-R: Knowledge-Aware Long-Horizon Jailbreaking for Protected LLMs. <em>EMNLP</em>, 2026 (in press).</li>
+    <li><a href="https://doi.org/10.1007/978-3-031-89853-2">Creating Frameworks and Datasets at the Intersection of AI Safety and Elections</a>. <em>PROMISE</em>, 2025.</li>
+    <li><a href="https://doi.org/10.5220/0012797900003767">Classifying Human-Generated and AI-Generated Text</a>. <em>SECRYPT</em>, 2024.</li>
+  </ul>
+  <p><a href="publications.html">See all publications &rarr;</a></p>
 </article>
 
 </main>
