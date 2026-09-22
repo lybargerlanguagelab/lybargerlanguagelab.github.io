@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects &amp; Research Areas - Lybarger Language Lab</title>
-<meta name="description" content="Funded projects and research areas of the Lybarger Language Lab: conversational AI for depression management, chronic pain, health literacy, and more.">
+<title>Projects - Lybarger Language Lab</title>
+<meta name="description" content="Current research projects of the Lybarger Language Lab: conversational AI for depression management, and understanding chronic pain through patient language.">
 <meta property="og:site_name" content="Lybarger Language Lab">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Projects &amp; Research Areas - Lybarger Language Lab">
-<meta property="og:description" content="Funded projects and research areas of the Lybarger Language Lab: conversational AI for depression management, chronic pain, health literacy, and more.">
+<meta property="og:title" content="Projects - Lybarger Language Lab">
+<meta property="og:description" content="Current research projects of the Lybarger Language Lab: conversational AI for depression management, and understanding chronic pain through patient language.">
 <meta property="og:url" content="https://www.lybargerlanguagelab.org/projects.html">
 <meta property="og:image" content="https://www.lybargerlanguagelab.org/assets/images/social-card.png">
 <meta property="og:image:alt" content="Lybarger Language Lab: natural language processing and AI for health, George Mason University">
@@ -36,324 +36,26 @@
 </header>
 <main id="main" class="wrap">
 
-<h1>Projects &amp; Research Areas</h1>
-<p class="lede">We build language technology for health: systems that help patients understand health information, help clinicians and researchers learn from what patients say, and hold AI advice to a clinical standard of trust. Each section below covers the problem, what we're building, who's working on it, and what we've published.</p>
+<h1>Projects</h1>
+<p class="lede">Two funded projects are the lab's current focus: evaluating whether conversational AI can give trustworthy guidance on depression treatment, and studying how patients describe chronic pain in their own words. Earlier and ongoing work appears on the <a href="publications.html">Publications</a> page.</p>
 
-<ul class="stat-strip">
-  <li><strong>5</strong> research areas</li>
-  <li><strong>2</strong> externally funded</li>
-  <li><strong>14</strong> papers &amp; posters</li>
-  <li><strong>6</strong> lab members</li>
-</ul>
-
-<div class="project-layout">
-
-<nav class="project-nav" aria-label="Projects and research areas">
-  <ul>
-    <li><a href="#depression-ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Depression AI</a></li>
-    <li><a href="#chronic-pain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>Chronic Pain</a></li>
-    <li><a href="#health-literacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5c3-1.4 7-1.4 10 0v14c-3-1.4-7-1.4-10 0V5z"/><path d="M22 5c-3-1.4-7-1.4-10 0v14c3-1.4 7-1.4 10 0V5z"/></svg>Health Literacy</a></li>
-    <li><a href="#correctional-records"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>Correctional &amp; Legal</a></li>
-    <li><a href="#emerging"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Emerging Directions</a></li>
-  </ul>
-</nav>
-
-<div class="project-content">
-
-<!-- ================= Depression AI ================= -->
-<section class="area-section" id="depression-ai" aria-labelledby="depression-ai-title">
-  <header class="area-header">
-    <span class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-    <div>
-      <p class="area-kicker"><span class="badge">Funded</span> PCORI &middot; 2024&ndash;2027</p>
-      <h2 id="depression-ai-title">Conversational AI for Depression Management</h2>
-    </div>
-  </header>
-
-  <div class="area-body">
-    <div class="area-story">
-      <h3>The problem</h3>
-      <p>People increasingly turn to chatbots for medical advice, including which antidepressant might work for them. Choosing an antidepressant depends heavily on the individual patient, and a confident but wrong answer can cause real harm. Before these systems can be trusted, we need rigorous ways to test whether their guidance is safe and grounded in evidence.</p>
-      <h3>Our approach</h3>
-      <ul class="approach-list">
-        <li><strong>Simulated patients.</strong> LLM-based patient simulations that put conversational agents through realistic antidepressant-selection conversations and assess the risk in what they recommend.</li>
-        <li><strong>Causal reasoning.</strong> Causal-AI methods that connect patient characteristics to treatment outcomes, used to guide and check model recommendations.</li>
-        <li><strong>Beyond depression.</strong> The same causal-network approach applied to steering language models in COVID-19 care.</li>
-      </ul>
-    </div>
-
-    <aside class="area-facts">
-      <img class="area-figure" src="assets/images/project-depression-ai.svg" alt="" width="320" height="240">
-      <dl>
-        <dt>Funding</dt>
-        <dd>Patient-Centered Outcomes Research Institute (PCORI), $1,049,998 over 3 years</dd>
-        <dt>Collaborators</dt>
-        <dd>Dr. Farrokh Alemi, George Mason University</dd>
-        <dt>People</dt>
-        <dd>
-          <ul class="people-row">
-            <li><a href="kevin-lybarger.html"><img src="assets/images/kevin-lybarger.jpg" alt="" width="40" height="40">Kevin</a></li>
-            <li><a href="tanvir-shawon.html"><img src="assets/images/tanvir-shawon.jpg" alt="" width="40" height="40">Tanvir</a></li>
-            <li><a href="hadeel-elyazori.html"><img src="assets/images/hadeel-elyazori.png" alt="" width="40" height="40">Hadeel</a></li>
-            <li><a href="sabik-irbaz.html"><img src="assets/images/sabik-irbaz.png" alt="" width="40" height="40">Sabik</a></li>
-          </ul>
-        </dd>
-        <dt>Learn more</dt>
-        <dd><a href="https://www.pcori.org/research-results/2024/training-large-language-models">PCORI project page</a> &middot; <a href="https://www.gmu.edu/news/2024-12/interprofessional-george-mason-researchers-awarded-more-1-million-improve-outcomes">Mason announcement</a></dd>
-      </dl>
-    </aside>
+<article class="project project-media">
+  <img class="project-figure" src="assets/images/project-depression-ai.svg" alt="" width="320" height="240">
+  <div>
+    <h2>Conversational AI for Depression Management</h2>
+    <p class="meta">Funded by the Patient-Centered Outcomes Research Institute (PCORI), $1,049,998, 3 years</p>
+    <p>With Dr. Farrokh Alemi, we are evaluating conversational AI for depression management: exploring how large language models can improve antidepressant recommendations and patient outcomes. The project develops patient simulations and risk-assessment methods to test whether conversational agents give trustworthy guidance on antidepressant selection. Details on the <a href="https://www.pcori.org/research-results/2024/training-large-language-models">PCORI website</a> and in the <a href="https://www.gmu.edu/news/2024-12/interprofessional-george-mason-researchers-awarded-more-1-million-improve-outcomes">George Mason announcement</a>.</p>
   </div>
+</article>
 
-  <h3 class="papers-heading">Papers</h3>
-  <ul class="paper-grid">
-    <li class="paper-card">
-      <p class="paper-venue">Journal of Biomedical Informatics &middot; 2026 <span class="paper-status">Under review</span></p>
-      <h4><a href="https://doi.org/10.2139/ssrn.6537875">Causal AI Reasoning: Direct Effects Multiplicative Inference Algorithm</a></h4>
-      <p class="paper-authors">Alemi et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">JMIR AI &middot; 2026 <span class="paper-status">Under review</span></p>
-      <h4>Advancing AI Trustworthiness Through Patient Simulation: Risk Assessment of Conversational Agents for Antidepressant Selection</h4>
-      <p class="paper-authors">Shawon et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">Health Care Management Science &middot; 2025</p>
-      <h4><a href="https://doi.org/10.1007/s10729-025-09724-8">Causal Networks Guiding Large Language Models: Application to COVID-19</a></h4>
-      <p class="paper-authors">Lin et al.</p>
-    </li>
-  </ul>
-  <p class="resources-note">Code and data links coming soon.</p>
-</section>
-
-<!-- ================= Chronic Pain ================= -->
-<section class="area-section" id="chronic-pain" aria-labelledby="chronic-pain-title">
-  <header class="area-header">
-    <span class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>
-    <div>
-      <p class="area-kicker"><span class="badge">Funded</span> NIH &middot; 2025&ndash;</p>
-      <h2 id="chronic-pain-title">Understanding Chronic Pain through Language</h2>
-    </div>
-  </header>
-
-  <div class="area-body">
-    <div class="area-story">
-      <h3>The problem</h3>
-      <p>Chronic pain is shaped by biology, psychology, and life circumstances, yet clinical records capture little of how patients actually experience it. Motivational interviews let patients describe their pain in their own words, but the transcripts are long and unstructured, which makes them hard to analyze at scale.</p>
-      <h3>Our approach</h3>
-      <ul class="approach-list">
-        <li><strong>Annotation schemes.</strong> Frameworks for labeling the biopsychosocial factors patients raise in motivational-interview transcripts, including content that is ambiguous by nature.</li>
-        <li><strong>Extraction models.</strong> Information-extraction systems that pull those factors out of transcripts automatically, so patterns can be studied across many patients.</li>
-        <li><strong>Student research.</strong> Undergraduate researchers contributing analyses of the interview data.</li>
-      </ul>
-    </div>
-
-    <aside class="area-facts">
-      <img class="area-figure" src="assets/images/project-chronic-pain.svg" alt="" width="320" height="240">
-      <dl>
-        <dt>Funding</dt>
-        <dd>National Institutes of Health (NIH), $4.65 million multi-team award</dd>
-        <dt>Collaborators</dt>
-        <dd>George Mason chronic knee pain research team</dd>
-        <dt>People</dt>
-        <dd>
-          <ul class="people-row">
-            <li><a href="kevin-lybarger.html"><img src="assets/images/kevin-lybarger.jpg" alt="" width="40" height="40">Kevin</a></li>
-            <li><a href="hadeel-elyazori.html"><img src="assets/images/hadeel-elyazori.png" alt="" width="40" height="40">Hadeel</a></li>
-          </ul>
-        </dd>
-        <dt>Learn more</dt>
-        <dd><a href="https://www.gmu.edu/news/2025-09/george-mason-researchers-awarded-465-million-nih-grant-explore-chronic-knee-pain">Mason announcement</a></dd>
-      </dl>
-    </aside>
+<article class="project project-media">
+  <img class="project-figure" src="assets/images/project-chronic-pain.svg" alt="" width="320" height="240">
+  <div>
+    <h2>Understanding Chronic Pain through Language</h2>
+    <p class="meta">NIH-funded collaboration, $4.65 million (multi-team)</p>
+    <p>The lab is part of a George Mason research team studying chronic knee pain, using motivational interviewing and information extraction to capture patients' lived experiences with chronic pain in their own words. Our work develops annotation methods and extraction models for these interview transcripts. Details in the <a href="https://www.gmu.edu/news/2025-09/george-mason-researchers-awarded-465-million-nih-grant-explore-chronic-knee-pain">George Mason announcement</a>.</p>
   </div>
-
-  <h3 class="papers-heading">Papers</h3>
-  <ul class="paper-grid">
-    <li class="paper-card">
-      <p class="paper-venue">CL4Health @ NAACL &middot; 2025</p>
-      <h4><a href="https://doi.org/10.18653/v1/2025.cl4health-1.28">Capturing Patients' Lived Experiences with Chronic Pain through Motivational Interviewing and Information Extraction</a></h4>
-      <p class="paper-authors">Elyazori et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">NCUR &middot; 2026 <span class="paper-status">Poster</span></p>
-      <h4>Capturing the Lived Experiences of Individuals with Chronic Pain through Motivational Interviewing</h4>
-      <p class="paper-authors">Abdulrazzaq et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">NCUR &middot; 2026 <span class="paper-status">Poster</span></p>
-      <h4>Extracting Biopsychosocial Insights from Motivational Interview Transcripts on Chronic Pain Using Natural Language Processing</h4>
-      <p class="paper-authors">Abdulrazzaq et al.</p>
-    </li>
-  </ul>
-  <p class="resources-note">Code and data links coming soon.</p>
-</section>
-
-<!-- ================= Health Literacy ================= -->
-<section class="area-section" id="health-literacy" aria-labelledby="health-literacy-title">
-  <header class="area-header">
-    <span class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5c3-1.4 7-1.4 10 0v14c-3-1.4-7-1.4-10 0V5z"/><path d="M22 5c-3-1.4-7-1.4-10 0v14c3-1.4 7-1.4 10 0V5z"/></svg></span>
-    <div>
-      <p class="area-kicker">Research area &middot; 2024&ndash;present</p>
-      <h2 id="health-literacy-title">Health Literacy &amp; Text Simplification</h2>
-    </div>
-  </header>
-
-  <div class="area-body">
-    <div class="area-story">
-      <h3>The problem</h3>
-      <p>Health information is often written well above the reading level of the patients who need it most. And when patients ask language models health questions, the quality of the answer can shift with how the question is worded, which puts people with lower health literacy at a disadvantage.</p>
-      <h3>Our approach</h3>
-      <ul class="approach-list">
-        <li><strong>Simplification corpora.</strong> An annotated corpus for simplifying digestive-cancer education materials, with new reinforcement-learning strategies for the simplification models.</li>
-        <li><strong>Robustness testing.</strong> Measuring how health question answering holds up when questions are rewritten at different reading levels.</li>
-        <li><strong>Efficient extraction.</strong> LLM-based extraction with knowledge distillation for analyzing HPV health-communication materials at low cost.</li>
-      </ul>
-    </div>
-
-    <aside class="area-facts">
-      <dl>
-        <dt>People</dt>
-        <dd>
-          <ul class="people-row">
-            <li><a href="kevin-lybarger.html"><img src="assets/images/kevin-lybarger.jpg" alt="" width="40" height="40">Kevin</a></li>
-            <li><a href="mushfiqur-rahman.html"><img src="assets/images/mushfiqur-rahman.png" alt="" width="40" height="40">Muhammad</a></li>
-            <li><a href="sabik-irbaz.html"><img src="assets/images/sabik-irbaz.png" alt="" width="40" height="40">Sabik</a></li>
-            <li><a href="saadat-khan.html"><img src="assets/images/saadat-khan.jpeg" alt="" width="40" height="40">Saadat</a></li>
-          </ul>
-        </dd>
-      </dl>
-    </aside>
-  </div>
-
-  <h3 class="papers-heading">Papers</h3>
-  <ul class="paper-grid">
-    <li class="paper-card">
-      <p class="paper-venue">Journal of Biomedical Informatics &middot; 2024</p>
-      <h4><a href="https://doi.org/10.1016/j.jbi.2024.104727">Health Text Simplification: An Annotated Corpus for Digestive Cancer Education and Novel Strategies for Reinforcement Learning</a></h4>
-      <p class="paper-authors">Rahman et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">PLOS Digital Health &middot; 2026</p>
-      <h4><a href="https://doi.org/10.1371/journal.pdig.0001275">Efficient Information Extraction Using LLMs and Knowledge Distillation: A Study on HPV Health Communication</a></h4>
-      <p class="paper-authors">Khan et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">TSAR Workshop &middot; 2025</p>
-      <h4><a href="https://doi.org/10.18653/v1/2025.tsar-1.5">Evaluating Health Question Answering Under Readability-Controlled Style Perturbations</a></h4>
-      <p class="paper-authors">Rahman et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">NCI Junior Investigator Meeting &middot; 2024 <span class="paper-status">Poster</span></p>
-      <h4>Health Text Simplification: An Annotated Corpus for Digestive Cancer Education &amp; Novel Strategies for Reinforcement Learning</h4>
-      <p class="paper-authors">Rahman &amp; Irbaz</p>
-    </li>
-  </ul>
-  <p class="resources-note">Code and data links coming soon.</p>
-</section>
-
-<!-- ================= Correctional & Legal ================= -->
-<section class="area-section" id="correctional-records" aria-labelledby="correctional-records-title">
-  <header class="area-header">
-    <span class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg></span>
-    <div>
-      <p class="area-kicker">Research area &middot; 2023&ndash;present</p>
-      <h2 id="correctional-records-title">NLP for Correctional &amp; Legal Records</h2>
-    </div>
-  </header>
-
-  <div class="area-body">
-    <div class="area-story">
-      <h3>The problem</h3>
-      <p>Probation, parole, and incident records hold information that matters for people's health and rehabilitation, but much of it lives in free-text notes or handwritten forms that are rarely analyzed systematically.</p>
-      <h3>Our approach</h3>
-      <ul class="approach-list">
-        <li><strong>Supervision records.</strong> NLP analysis of supervisory condition notes in probation and parole records.</li>
-        <li><strong>Handwritten reports.</strong> An optical character recognition pipeline that turns handwritten assault and violence reports into text that extraction models can use.</li>
-      </ul>
-    </div>
-
-    <aside class="area-facts">
-      <dl>
-        <dt>People</dt>
-        <dd>
-          <ul class="people-row">
-            <li><a href="kevin-lybarger.html"><img src="assets/images/kevin-lybarger.jpg" alt="" width="40" height="40">Kevin</a></li>
-            <li><a href="hadeel-elyazori.html"><img src="assets/images/hadeel-elyazori.png" alt="" width="40" height="40">Hadeel</a></li>
-            <li><a href="sabik-irbaz.html"><img src="assets/images/sabik-irbaz.png" alt="" width="40" height="40">Sabik</a></li>
-            <li><a href="mushfiqur-rahman.html"><img src="assets/images/mushfiqur-rahman.png" alt="" width="40" height="40">Muhammad</a></li>
-          </ul>
-        </dd>
-      </dl>
-    </aside>
-  </div>
-
-  <h3 class="papers-heading">Papers</h3>
-  <ul class="paper-grid">
-    <li class="paper-card">
-      <p class="paper-venue">Federal Probation &middot; 2023</p>
-      <h4>Exploring Probation and Parole Records Using Natural Language Processing: A Case Study of Supervisory Condition Notes</h4>
-      <p class="paper-authors">Elyazori</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">AMIA Symposium Workshop &middot; 2024 <span class="paper-status">Poster</span></p>
-      <h4>Optical Character Recognition for Information Extraction from Handwritten Assault and Violence Reports</h4>
-      <p class="paper-authors">Irbaz et al.</p>
-    </li>
-  </ul>
-</section>
-
-<!-- ================= Emerging ================= -->
-<section class="area-section" id="emerging" aria-labelledby="emerging-title">
-  <header class="area-header">
-    <span class="area-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
-    <div>
-      <p class="area-kicker">Emerging &middot; one paper each so far</p>
-      <h2 id="emerging-title">Emerging Directions</h2>
-    </div>
-  </header>
-
-  <div class="area-body">
-    <div class="area-story">
-      <h3>What we're exploring</h3>
-      <ul class="approach-list">
-        <li><strong>Jailbreak robustness.</strong> Knowledge-aware, long-horizon attacks that test how well protected language models hold up against sustained adversarial pressure, so their safeguards can be strengthened.</li>
-        <li><strong>Retrieval-augmented generation.</strong> Query-aware diversity in retrieval, so models draw on a broader, less redundant set of sources when answering.</li>
-      </ul>
-    </div>
-
-    <aside class="area-facts">
-      <dl>
-        <dt>People</dt>
-        <dd>
-          <ul class="people-row">
-            <li><a href="kevin-lybarger.html"><img src="assets/images/kevin-lybarger.jpg" alt="" width="40" height="40">Kevin</a></li>
-            <li><a href="mushfiqur-rahman.html"><img src="assets/images/mushfiqur-rahman.png" alt="" width="40" height="40">Muhammad</a></li>
-            <li><a href="saadat-khan.html"><img src="assets/images/saadat-khan.jpeg" alt="" width="40" height="40">Saadat</a></li>
-          </ul>
-        </dd>
-      </dl>
-    </aside>
-  </div>
-
-  <h3 class="papers-heading">Papers</h3>
-  <ul class="paper-grid">
-    <li class="paper-card">
-      <p class="paper-venue">EMNLP &middot; 2026 <span class="paper-status">In press</span></p>
-      <h4>ATTCK-R: Knowledge-Aware Long-Horizon Jailbreaking for Protected LLMs</h4>
-      <p class="paper-authors">Rahman et al.</p>
-    </li>
-    <li class="paper-card">
-      <p class="paper-venue">Findings of EACL &middot; 2026</p>
-      <h4><a href="https://aclanthology.org/2026.findings-eacl.150/">DF-RAG: Query-Aware Diversity for Retrieval-Augmented Generation</a></h4>
-      <p class="paper-authors">Khan et al.</p>
-    </li>
-  </ul>
-</section>
-
-<p class="muted">Looking for everything? Full citations for all lab work are on the <a href="publications.html">Publications</a> page.</p>
-
-</div>
-</div>
+</article>
 
 </main>
 <footer class="site-footer">
@@ -361,27 +63,5 @@
     <p>Lybarger Language Lab &middot; Department of Information Sciences and Technology &middot; George Mason University</p>
   </div>
 </footer>
-<script>
-(function () {
-  "use strict";
-  var links = document.querySelectorAll(".project-nav a");
-  if (!links.length || !("IntersectionObserver" in window)) return;
-
-  var byId = {};
-  links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
-
-  function mark(id) {
-    links.forEach(function (a) { a.removeAttribute("aria-current"); });
-    if (byId[id]) byId[id].setAttribute("aria-current", "true");
-  }
-
-  // Highlight the section whose top has most recently crossed the upper third of the viewport.
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
-  }, { rootMargin: "-20% 0px -70% 0px" });
-
-  document.querySelectorAll(".area-section").forEach(function (s) { observer.observe(s); });
-})();
-</script>
 </body>
 </html>
