@@ -165,7 +165,6 @@ a:hover { color: var(--green-dark); }
 
 .lede {
   font-size: 1.15rem;
-  max-width: 46rem;
 }
 
 .muted { color: var(--muted); }
@@ -190,7 +189,6 @@ a:hover { color: var(--green-dark); }
   border-radius: 0 4px 4px 0;
   padding: 1.1rem 1.4rem 1.2rem;
   margin: 2.25rem 0;
-  max-width: 46rem;
 }
 
 .notice h2 {
