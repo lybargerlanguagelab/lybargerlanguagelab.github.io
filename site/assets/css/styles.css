@@ -165,7 +165,6 @@ a:hover { color: var(--green-dark); }
 
 .lede {
   font-size: 1.15rem;
-  max-width: 46rem;
 }
 
 .muted { color: var(--muted); }
@@ -190,7 +189,6 @@ a:hover { color: var(--green-dark); }
   border-radius: 0 4px 4px 0;
   padding: 1.1rem 1.4rem 1.2rem;
   margin: 2.25rem 0;
-  max-width: 46rem;
 }
 
 .notice h2 {
@@ -524,37 +522,381 @@ details.pub-collapse summary h2 {
 
 /* ---------- projects ---------- */
 
-.project {
-  border-bottom: 1px solid var(--rule);
-  padding-block: 1.25rem;
+.badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.project:last-of-type { border-bottom: none; }
+.stat-strip {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.5rem 0 2.5rem;
+}
 
-.project h2 { border: none; margin: 0 0 0.4rem; padding: 0; }
+.stat-strip li {
+  flex: 1 1 9rem;
+  background: var(--bg-soft);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
 
-.project .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.5rem; }
-
-.project-figure {
+.stat-strip strong {
   display: block;
-  width: 100%;
-  max-width: 16rem;
-  height: auto;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  color: var(--green);
+}
+
+/* Sidebar + content on wide screens; the sidebar becomes a pill row above
+   the content on narrow ones. */
+.project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.project-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
   margin: 0 0 1rem;
 }
 
-/* Figure beside the prose once there is room, stacked above it before that.
-   Same shape as .person-wide on the People page. */
-@media (min-width: 42rem) {
-  .project-media {
-    display: grid;
-    grid-template-columns: 16rem 1fr;
-    gap: 1.5rem;
+.project-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.93rem;
+}
+
+.project-nav svg { width: 1rem; height: 1rem; flex-shrink: 0; }
+
+.project-nav a:hover { background: var(--bg-soft); color: var(--green); }
+
+.project-nav a[aria-current] {
+  background: var(--bg-soft);
+  color: var(--green);
+  font-weight: 600;
+  border-color: var(--green);
+}
+
+@media (min-width: 56rem) {
+  .project-layout {
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 2.5rem;
     align-items: start;
   }
 
-  .project-figure { margin-bottom: 0; }
+  .project-nav { position: sticky; top: 1.5rem; }
+
+  .project-nav ul { flex-direction: column; gap: 0.15rem; margin-bottom: 1.5rem; }
+
+  .project-nav a {
+    border: none;
+    border-left: 3px solid transparent;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .project-nav a[aria-current] { border-left-color: var(--green); }
 }
+
+.area-section {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+  scroll-margin-block-start: 1.5rem;
+}
+
+.area-section:last-of-type { border-bottom: none; }
+
+.area-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.area-header h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.area-kicker {
+  margin: 0 0 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.area-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  color: var(--green);
+}
+
+.area-icon svg { width: 1.6rem; height: 1.6rem; }
+
+.area-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .area-body { grid-template-columns: minmax(0, 1fr) 17rem; }
+}
+
+.area-story h3,
+.papers-heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin: 1.25rem 0 0.4rem;
+}
+
+.area-story h3:first-child { margin-top: 0; }
+
+.papers-heading { margin: 1.75rem 0 0.75rem; }
+
+.approach-list { list-style: none; padding: 0; margin: 0; }
+
+.approach-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.approach-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.area-facts {
+  align-self: start;
+  background: var(--bg-soft);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  font-size: 0.92rem;
+}
+
+.area-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 0 0 0.9rem;
+  background: var(--bg);
+}
+
+.area-facts dl { margin: 0; }
+
+.area-facts dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.area-facts dt:first-child { margin-top: 0; }
+
+.area-facts dd { margin: 0.2rem 0 0; }
+
+.people-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.9rem;
+  padding: 0;
+  margin: 0.35rem 0 0;
+}
+
+.people-row a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.people-row img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.people-row a:hover { color: var(--green); }
+
+.people-row a:hover img { box-shadow: 0 0 0 2px var(--bg-soft), 0 0 0 4px var(--green); }
+
+.resources-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Home-page tabs: one tab per project/area, one card per paper. */
+.tabs { margin: 1rem 0 1.5rem; }
+
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  border-bottom: 2px solid var(--rule);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  margin-bottom: -2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab svg { width: 1.05rem; height: 1.05rem; flex-shrink: 0; }
+
+.tab:hover { color: var(--green); background: var(--bg-soft); }
+
+.tab[aria-selected="true"] {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+/* Without JS the tab buttons do nothing, so hide them and show every panel. */
+.tabs:not(.tabs-ready) .tab-list { display: none; }
+
+.tab-panel { padding-top: 1.25rem; }
+
+.tabs:not(.tabs-ready) .tab-panel + .tab-panel {
+  border-top: 1px solid var(--rule);
+  margin-top: 1.5rem;
+}
+
+.tab-panel h3 { margin: 0 0 0.4rem; font-size: 1.25rem; }
+
+.tab-summary { color: var(--muted); margin: 0 0 1.1rem; }
+
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paper-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--green);
+  border-radius: 6px;
+  padding: 0.9rem 1rem 1rem;
+  background: var(--bg);
+}
+
+.paper-venue {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.45rem;
+}
+
+.paper-status {
+  display: inline-block;
+  margin-left: 0.3rem;
+  padding: 0 0.45rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  background: #fff7dd;
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.paper-card h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
+}
+
+.paper-card h4 a { text-decoration: none; }
+
+.paper-card h4 a:hover,
+.paper-card h4 a:focus-visible { text-decoration: underline; }
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: auto 0 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tab, .paper-card {
+    transition: color 0.15s ease, background-color 0.15s ease,
+                border-color 0.15s ease, transform 0.15s ease,
+                box-shadow 0.15s ease;
+  }
+
+  .paper-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
 
 /* ---------- contact ---------- */
 
