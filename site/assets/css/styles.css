@@ -413,8 +413,8 @@ h3 > .card-link:focus-visible { text-decoration: underline; }
 .news-item h3 a:focus-visible { text-decoration: underline; }
 
 .news-item-thumb {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 8rem;
+  height: 8rem;
   object-fit: cover;
   object-position: top;
   border-radius: 6px;
