@@ -416,6 +416,15 @@ h3 > .card-link:focus-visible { text-decoration: underline; }
   padding: 0;
 }
 
+.news-figure {
+  display: block;
+  width: 100%;
+  max-width: 16rem;
+  height: auto;
+  border-radius: 6px;
+  margin: 0.6rem 0 0.75rem;
+}
+
 .news-item p:last-child { margin-bottom: 0; }
 
 .news-item time {
