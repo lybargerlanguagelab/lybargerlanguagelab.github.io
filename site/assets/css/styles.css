@@ -441,7 +441,7 @@ h3 > .card-link:focus-visible { text-decoration: underline; }
 .news-figure {
   display: block;
   width: 100%;
-  max-width: 28rem;
+  max-width: 32rem;
   height: auto;
   border-radius: 6px;
   margin: 0.6rem 0 0.75rem;
