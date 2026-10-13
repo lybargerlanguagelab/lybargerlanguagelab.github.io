@@ -1,6 +1,6 @@
 # Contributing to the lab website
 
-This repo is the source of lybargerlanguagelab.org. Everything under `site/` deploys as-is to GitHub Pages on every push to `main`; there is no build step and no JavaScript. The one exception is the publications page, which is generated (see below).
+This repo is the source of lybargerlanguagelab.org. Everything under `site/` deploys as-is to GitHub Pages on every push to `main`; there is no build step. The one exception is the publications page, which is generated (see below). The only JavaScript is two small inline scripts, the research-area tabs on the home page and the section highlighting on the Projects page.
 
 ## How to make a change
 
@@ -36,7 +36,7 @@ Ids are permanent once published; do not rename one to fix a typo in the title. 
 Some changes need a decision before anyone builds them. Raise these in an issue or at lab meeting. A branch with a mockup is a good way to make the case, but it will not be merged until the decision is made:
 
 - A new page, or a new kind of page (project pages, research-area pages). Every page carries its own copy of the header, nav, and footer and needs an entry in `site/sitemap.xml`, so the page count stays deliberate.
-- Any JavaScript, including filters, toggles, and search. The site has none today.
+- Any new JavaScript, including filters, toggles, and search. The two existing scripts were each approved as a feature.
 - Changes to the publications page, including tags, filters, and per-paper buttons. These are made in `tools/build_publications.py`, never in the generated HTML.
 - Changes to `site/assets/css/styles.css`.
 
