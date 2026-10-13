@@ -445,6 +445,30 @@ h3 > .card-link:focus-visible { text-decoration: underline; }
   margin: 0.6rem 0 0.75rem;
 }
 
+/* Figure beside the text, opt-in: class="news-item news-side". The figure
+   takes the left column across all rows; date, headline, and text fill the
+   right column in source order. Below 56rem the item stacks exactly like a
+   plain one, so the markup is the same either way. */
+@media (min-width: 56rem) {
+  .news-side {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    column-gap: 1.5rem;
+  }
+  .news-side > * { grid-column: 2; }
+  .news-side > .news-figure {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    margin: 0.3rem 0 0;
+    /* Cap height so a tall flyer sits beside its text instead of running
+       far past it; a wide diagram never reaches the cap. */
+    width: auto;
+    max-width: 100%;
+    max-height: 24rem;
+  }
+}
+
 .news-item p:last-child { margin-bottom: 0; }
 
 .news-item time {

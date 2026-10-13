@@ -29,6 +29,8 @@ News lives in two places that must be updated together, in one commit:
 1. Add an `<article class="news-item">` at the top of the list in `site/news.html`, with an `id` in the form `YYYY-MM-DD-short-slug`, a `<time>` element, and one to three sentences stating the fact being announced. Copy the shape of the item above it.
 2. Add a matching entry at the top of the news strip on `site/index.html`, with the headline linking to `news.html#<that id>`, and drop the oldest entry so the strip stays the same length.
 
+An item can carry one image: `<img class="news-figure" ...>` right after the `<h2>`, with real `alt` text and `width`/`height` attributes, the file in `site/assets/images/`. To show the image to the left of the text on wide screens, make the article `class="news-item news-side"`; on phones it stacks either way. The 2026-10-05 and 2026-09-22 items in `site/news.html` are working examples.
+
 Ids are permanent once published; do not rename one to fix a typo in the title. News announces only things that are already public (a paper accepted or published, an award announced, a defense held). Write in the lab's voice, not first person.
 
 ## Names
