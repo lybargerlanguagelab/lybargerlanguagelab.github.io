@@ -1,13 +1,16 @@
 % =====================================================================
-% CANONICAL BIB: cv/source/mybib.bib in the Tenure workspace.
+% CANONICAL BIB: cv/source/publications.bib in the Tenure workspace.
 % This one file feeds both the CV and lybargerlanguagelab.org.
 % Full conventions: cv/_playbook/bib-conventions.md (Tenure workspace).
 %
 % pubstate: absent = published. submitted | inpress (accepted, not yet
 %   out) | rejected (kept for the record) | hidden (kept, never listed).
-% keywords: selected (site's Selected Publications cards) | poster |
-%   abstract | nonrefereed | talk | include (force-include when the lab
-%   authors are truncated inside "and others").
+% keywords: poster | abstract | nonrefereed | talk | invited (with
+%   talk: an invited talk) | workshop (refereed workshop paper) |
+%   include (force-include when the lab authors are truncated inside
+%   "and others").
+% Site highlights (Selected Publications cards) are not in this file;
+%   the site keeps them in tools/highlights.txt in its own workspace.
 % award: free text, e.g. {Outstanding Paper Award}.
 % note: printable prose ONLY (links, PMIDs, footnotes). Never status
 %   words; status lives in pubstate.
@@ -39,17 +42,28 @@
   year      = {2026},
 }
 
-@article{shawon2026advancing,
+
+% OpenReview submission 65
+@inproceedings{khan2026rgbsim-socialagent,
   pubstate = {submitted},
-  title={Advancing {AI} Trustworthiness Through Patient Simulation: Risk Assessment of Conversational Agents for Antidepressant Selection},
-  author={\uline{M. T. R. Shawon} and \uline{M. S. Irbaz} and \uline{H. R. A. Elyazori} and Resapu, Keerti Reddy and Lin, Yili and Cardenas, Vladimir Franzuela and Alemi, Farrokh and \textbf{K. Lybarger}},
-  journal={JMIR AI},
+  keywords = {workshop},
+  title={{RGB-SIM}: Reference-Guided Behavioral Steering for Behaviorally Representative User Simulation},
+  author={\uline{S. Khan} and Wu, Jingyu and Qi, Tong and \textbf{K. Lybarger} and Liu, Daben and Babinsky, Erin},
+  booktitle={NeurIPS 2026 Workshop on Social Agents (SocialAgent)},
   year={2026},
+  note={Non-archival. \url{https://openreview.net/forum?id=oLuEsGL1g3}},
 }
 
-
-
-
+% OpenReview submission 33
+@inproceedings{khan2026rgbsim-bialign,
+  pubstate = {submitted},
+  keywords = {workshop},
+  title={{RGB-SIM}: Reference-Guided Behavioral Steering for Behaviorally Representative User Simulation},
+  author={\uline{S. Khan} and Wu, Jingyu and Qi, Tong and \textbf{K. Lybarger} and Liu, Daben and Babinsky, Erin},
+  booktitle={NeurIPS 2026 Workshop on Bidirectional Human-AI Alignment (BiAlign)},
+  year={2026},
+  note={Non-archival. \url{https://openreview.net/forum?id=gMNplTq9sh}},
+}
 
 @inproceedings{elyazori2026aces,
   pubstate = {rejected},
@@ -158,6 +172,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+@article{shawon2026patient,
+  title={A Patient Simulation Framework for Risk Assessment of Conversational Health Care {AI}: Development and Evaluation Study},
+  author={\uline{M. T. R. Shawon} and \uline{M. S. Irbaz} and \uline{H. R. A. Elyazori} and Resapu, Keerti Reddy and Lin, Yili and Cardenas, Vladimir Franzuela and Eklou, K. Pierre and Alemi, Farrokh and \textbf{K. Lybarger}},
+  journal={JMIR AI},
+  year={2026},
+  month={Oct},
+  day={5},
+  volume={5},
+  pages={e100772},
+  doi={10.2196/100772},
+}
+
+
+
+
 @article{albanese2026towards,
   author = {Albanese, Massimiliano and Ou, Xinming and \textbf{K. Lybarger} and Lende, Daniel and Goldgof, Dmitry and Al Faisal, Faayed and Banstola, Kritan and Ghosh, Arka},
   title     = {Towards {AI}-Driven Human-Machine Co-Teaming for Adaptive and Agile Cyber Security Operation Centers},
@@ -182,7 +211,6 @@
 
 
 @article{kayira2026applying,
-  keywords = {selected},
   author={Alfred B. Kayira{\dag} and \uline{H. R. A. Elyazori}{\dag} and \textbf{K. Lybarger} and Fiona Walter and Claude Chelala and Garth Funston},
 title={Natural Language Processing of Clinical Notes for Cancer Research and Patient Care Prior to Widespread Adoption of Generative AI: Scoping Review},
 journal={JMIR AI},
@@ -196,7 +224,6 @@ doi={10.2196/73481},
 }
 
 @article{khan2026hpvPLOS,
-  keywords = {selected},
   title={Efficient Information Extraction Using {LLM}s and Knowledge Distillation: A Study on {HPV} Health Communication},
   author={ \uline{S. Khan} and \textbf{K. Lybarger} },
   journal={PLOS Digital Health},
@@ -209,7 +236,6 @@ doi={10.2196/73481},
 
 
 @inproceedings{khan2026dfrag,
-  keywords = {selected},
     title = "{DF}-{RAG}: Query-Aware Diversity for Retrieval-Augmented Generation",
     author = " \uline{S. Khan}  and
       Hong, Spencer  and
@@ -259,7 +285,6 @@ doi={10.2196/73481},
 }
 
 @inproceedings{rahman2025evaluating,
-  keywords = {selected},
     title = "Evaluating Health Question Answering Under Readability-Controlled Style Perturbations",
     author = "\uline{M. M. Rahman} and \textbf{K. Lybarger}",
     booktitle = "Proceedings of Workshop on Text Simplification, Accessibility and Readability (TSAR)",
@@ -290,7 +315,7 @@ author={Alemi, Farrokh and \textbf{K. Lybarger} and Vang, Jee and Lin, Yili and 
   doi={10.1007/s10729-025-09724-8}
 }
 
-@article{zhang2025semiPaper,
+@article{zhang2025semipaper,
   author       = {Qian Sophia Zhang and John Kang and \textbf{K. Lybarger} and Mallory C. Glenn and Patricia Sponseller and Kathryn Havard Blau and Eric Ford},
   title        = {Semi-automated topic identification for radiation oncology safety event reports using natural language processing and statistical modeling},
   journal      = {Medical Physics},
@@ -311,7 +336,6 @@ author={Alemi, Farrokh and \textbf{K. Lybarger} and Vang, Jee and Lin, Yili and 
 }
 
 @inproceedings{elyazori2025capturing,
-  keywords = {selected},
   title = {Capturing Patients' Lived Experiences with Chronic Pain through Motivational Interviewing and Information Extraction},
   author = {\uline{H. R. A. Elyazori} and Abdulrazzaq, Rusul and Al Shawi, Hana and Amouzou, Isaac Paki Elom and King, Patrick and Manns, Syleah and Popal, Mahdia and Patel, Zarna Narsihbhai and DeStefano, Secili and Shah, Jay and Gerber, Naomi Lynn and Sikdar, Siddhartha and Lee, Seiyon and Acuna, Samuel and \textbf{K. Lybarger}},
   booktitle = {Proceedings of the Workshop on Computational Linguistics for Health (CL4Health) at NAACL},
@@ -366,7 +390,6 @@ doi = {10.1089/sur.2024.266}
 }
 
 @article{rahman2024health,
-  keywords = {selected},
 title = {Health text simplification: An annotated corpus for digestive cancer education and novel strategies for reinforcement learning},
 journal = {Journal of Biomedical Informatics},
 volume = {158},

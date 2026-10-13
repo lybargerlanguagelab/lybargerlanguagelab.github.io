@@ -1,0 +1,16 @@
+# Selected Publications cards on site/publications.html, in display order.
+# One bib key per line; blank lines and lines starting with # are ignored.
+#
+# This is the site's editorial choice and lives here, not in the canonical
+# CV bib. The build fails on a key the bib does not have (a renamed key
+# breaks loudly, not silently), on a duplicate, and on a key whose entry is
+# not displayed (rejected, hidden, a talk, or no lab-author marker).
+# Curation criterion (Kevin, 2026-08-21): most recent published papers
+# coauthored with lab students.
+
+kayira2026applying
+khan2026hpvPLOS
+khan2026dfrag
+rahman2025evaluating
+elyazori2025capturing
+rahman2024health
