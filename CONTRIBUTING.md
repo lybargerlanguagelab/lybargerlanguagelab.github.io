@@ -31,6 +31,21 @@ News lives in two places that must be updated together, in one commit:
 
 Ids are permanent once published; do not rename one to fix a typo in the title. News announces only things that are already public (a paper accepted or published, an award announced, a defense held). Write in the lab's voice, not first person.
 
+## Names
+
+The site calls each person by the name they go by. Headlines, the home page, and short references use that name. The first mention in a news item's body uses the full name exactly as it appears on the People page, linked to the person's page; after that, use the short name. For example, a headline "Tanvir's paper published in JMIR AI" and a body that opens with `<a href="tanvir-shawon.html">Md Tanvir Rouf Shawon</a>`.
+
+| Page | Full name | Goes by |
+|---|---|---|
+| `kevin-lybarger.html` | Kevin Lybarger | Kevin |
+| `mushfiqur-rahman.html` | Md. Mushfiqur Rahman | Md |
+| `hadeel-elyazori.html` | Hadeel Elyazori | Hadeel |
+| `sabik-irbaz.html` | Mohammad Sabik Irbaz | Sabik |
+| `saadat-khan.html` | Saadat Hasan Khan | Saadat |
+| `tanvir-shawon.html` | Md Tanvir Rouf Shawon | Tanvir |
+
+If your full name or the name you go by changes, update this table in the same pull request as your People card and your page. People outside the lab get their full name, without a link unless they have a public page worth pointing to.
+
 ## Check with Kevin first
 
 Some changes need a decision before anyone builds them. Raise these in an issue or at lab meeting. A branch with a mockup is a good way to make the case, but it will not be merged until the decision is made:
