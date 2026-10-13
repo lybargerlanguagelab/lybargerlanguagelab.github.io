@@ -1,6 +1,6 @@
 <!-- Home page hero. Three panels, left to right: language in, model, structure out.
      Palette matches assets/css/styles.css. Decorative: index.html carries alt="". -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Illustration: a two-turn conversation, a neural network with one path lit, and a passage of text whose spans are labelled by type">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Illustration: a two-turn conversation, a neural network with one path lit, and a passage of text with three spans marked and labelled by type">
   <rect width="1200" height="300" rx="12" fill="#f4f7f5"/>
 
   <!-- left: a conversation, two turns -->
@@ -59,20 +59,31 @@
   </g>
   <circle cx="750" cy="150" r="6" fill="#ffcc33"/>
 
-  <!-- right: the same language with its spans labelled by type -->
+  <!-- right: the same language, three spans marked and typed -->
   <g id="labelled-text" transform="translate(790,50)">
     <rect x="0" y="10" width="330" height="180" rx="10" fill="#ffffff" stroke="#dfe5e1" stroke-width="2"/>
-    <rect x="52" y="36" width="104" height="20" rx="5" fill="#ffcc33" opacity="0.5"/>
-    <rect x="128" y="84" width="110" height="20" rx="5" fill="#a3c4b0" opacity="0.7"/>
-    <rect x="30" y="132" width="92" height="20" rx="5" fill="#4d8f6a" opacity="0.4"/>
-    <rect x="30" y="41" width="228" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="30" y="65" width="196" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="30" y="89" width="236" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="30" y="113" width="174" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="30" y="137" width="214" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="30" y="161" width="158" height="9" rx="4.5" fill="#c9d8ce"/>
-    <rect x="278" y="39" width="34" height="14" rx="7" fill="#ffcc33"/>
-    <rect x="278" y="87" width="34" height="14" rx="7" fill="#a3c4b0"/>
-    <rect x="278" y="135" width="34" height="14" rx="7" fill="#4d8f6a"/>
+
+    <!-- unmarked context -->
+    <rect x="24" y="28" width="196" height="9" rx="4.5" fill="#c9d8ce"/>
+
+    <rect x="14" y="46" width="248" height="30" rx="7" fill="#ffcc33" opacity="0.36"/>
+    <rect x="24" y="56" width="62" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="94" y="56" width="90" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="192" y="56" width="56" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="274" y="54" width="38" height="14" rx="7" fill="#ffcc33"/>
+
+    <rect x="14" y="84" width="206" height="30" rx="7" fill="#4d8f6a" opacity="0.34"/>
+    <rect x="24" y="94" width="78" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="110" y="94" width="96" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="274" y="92" width="38" height="14" rx="7" fill="#4d8f6a"/>
+
+    <rect x="14" y="122" width="212" height="30" rx="7" fill="#a3c4b0" opacity="0.38"/>
+    <rect x="24" y="132" width="46" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="78" y="132" width="38" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="124" y="132" width="88" height="9" rx="4.5" fill="#4d8f6a" opacity="0.72"/>
+    <rect x="274" y="130" width="38" height="14" rx="7" fill="#a3c4b0"/>
+
+    <!-- unmarked context -->
+    <rect x="24" y="162" width="164" height="9" rx="4.5" fill="#c9d8ce"/>
   </g>
 </svg>
