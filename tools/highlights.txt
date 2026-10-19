@@ -8,10 +8,11 @@
 # Curation criterion (Kevin, 2026-08-21): most recent published papers
 # coauthored with lab students.
 
+
+lybarger2026nlp_clinical_data
 shawon2026patient
 kayira2026applying
 khan2026hpvPLOS
 khan2026dfrag
 rahman2025evaluating
-elyazori2025capturing
 
