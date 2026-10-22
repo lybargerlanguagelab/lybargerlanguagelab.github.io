@@ -9,6 +9,10 @@
 %   talk: an invited talk) | workshop (refereed workshop paper) |
 %   include (force-include when the lab authors are truncated inside
 %   "and others").
+% Preprints: a standalone arXiv preprint is a misc entry with howpublished =
+%   {arXiv preprint arXiv:NNNN.NNNNN}, URL in note, keywords
+%   nonrefereed. A preprint of an under-review paper gets no entry of
+%   its own (link goes in that entry's note); drop it once published.
 % Site highlights (Selected Publications cards) are not in this file;
 %   the site keeps them in tools/highlights.txt in its own workspace.
 % award: free text, e.g. {Outstanding Paper Award}.
@@ -25,22 +29,6 @@
 
 
 
-@article{Alemi2026demi,
-  pubstate = {submitted},
-  author       = {Alemi, Farrokh and Lin, Yili and \uline{H. R. A. Elyazori} and Cardenas, Vladimir Franzuela and Ramezani, Niloofar and \textbf{K. Lybarger}},
-  title        = {Causal {AI} Reasoning: Direct Effects Multiplicative Inference Algorithm},
-  journal      = {Journal of Biomedical Informatics},
-  year         = {2026},
-  doi          = {10.2139/ssrn.6537875},
-}
-
-@article{lin2026potential,
-  pubstate = {rejected},
-  title     = {Potential Outcome of {AI}'s Advice for Treatment of Major Depressive Disorder},
-  author    = {Lin, Yili and Mansouri, Sina and Cardenas, Vladimir and Resapu, Keerti Reddy and \uline{M. T. R. Shawon} and Eklou, K. Pierre and Ursani, Aneel and \textbf{K. Lybarger} and Alemi, Farrokh},
-  journal   = {npj Digital Public Health},
-  year      = {2026},
-}
 
 
 % OpenReview submission 65
@@ -92,13 +80,6 @@
   year={2026},
 }
 
-@inproceedings{elyazori2026aces,
-  pubstate = {rejected},
-  title={{ACES}: Anchored Coordination and Effective Semantics for Annotation in Ambiguous Domains},
-  author={\uline{H. R. A. Elyazori} and Abdulrazzaq, Rusul and Mitchell, Ande Leonard and Nguyen, Blessing and Sreedevi-Naresh, Sasanka and Krafsig, Stephanie Elizabeth and Rossi, Thomas H. and Shah, Jay and Gerber, Lynn H. and DeStefano, Secili and Sikdar, Siddhartha and Acu{\~n}a, Samuel and \textbf{K. Lybarger}},
-  booktitle={Proceedings of the Association for Computational Linguistics},
-  year={2026},
-}
 
 
 @inproceedings{rahman2026attckr,
@@ -134,6 +115,21 @@
 % Rejected
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@article{lin2026potential,
+  pubstate = {rejected},
+  title     = {Potential Outcome of {AI}'s Advice for Treatment of Major Depressive Disorder},
+  author    = {Lin, Yili and Mansouri, Sina and Cardenas, Vladimir and Resapu, Keerti Reddy and \uline{M. T. R. Shawon} and Eklou, K. Pierre and Ursani, Aneel and \textbf{K. Lybarger} and Alemi, Farrokh},
+  journal   = {npj Digital Public Health},
+  year      = {2026},
+}
+
+@inproceedings{elyazori2026aces,
+  pubstate = {rejected},
+  title={{ACES}: Anchored Coordination and Effective Semantics for Annotation in Ambiguous Domains},
+  author={\uline{H. R. A. Elyazori} and Abdulrazzaq, Rusul and Mitchell, Ande Leonard and Nguyen, Blessing and Sreedevi-Naresh, Sasanka and Krafsig, Stephanie Elizabeth and Rossi, Thomas H. and Shah, Jay and Gerber, Lynn H. and DeStefano, Secili and Sikdar, Siddhartha and Acu{\~n}a, Samuel and \textbf{K. Lybarger}},
+  booktitle={Proceedings of the Association for Computational Linguistics},
+  year={2026},
+}
 
 
 @article{resapu2025ai_addiction_pcps,
@@ -188,6 +184,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PUBLISHED PAPERS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{Alemi2026demi,
+  author       = {Alemi, Farrokh and Lin, Yili and \uline{H. R. A. Elyazori} and Cardenas, Vladimir Franzuela and Ramezani, Niloofar and \textbf{K. Lybarger}},
+  title        = {Direct Effects Multiplicative Inference ({DEMI}): Causal Prediction from Pairwise Clinical Relationships, Applied to Antidepressant Response},
+  journal      = {Journal of Biomedical Informatics},
+  pages        = {105111},
+  year         = {2026},
+  issn         = {1532-0464},
+  doi          = {10.1016/j.jbi.2026.105111},
+}
 
 
 @incollection{lybarger2026nlp_clinical_data,
@@ -282,6 +289,7 @@ doi={10.2196/73481},
     year = "2026",
     publisher = "Association for Computational Linguistics",
     pages = "2873--2894",
+    doi = "10.18653/v1/2026.findings-eacl.150",
     note = {\url{https://aclanthology.org/2026.findings-eacl.150/}},
 }
 
@@ -613,6 +621,39 @@ doi = {10.3390/cancers14235756}
   doi={10.1016/j.ijrobp.2024.07.1467}
 }
 
+@article{nguyen2022severity,
+  keywords = {abstract},
+  title={Automatic Prediction of Severity Score of Incident Learning Reports in Radiation Oncology Using Natural Language Processing},
+  author={Nguyen, Mark and Beidler, Peter and \textbf{K. Lybarger} and Anderson, A. and Holmberg, Ola and Kang, John and others},
+  journal={International Journal of Radiation Oncology, Biology, Physics},
+  volume={114},
+  number={3},
+  pages={S93--S94},
+  year={2022},
+}
+
+@article{beidler2022screening,
+  keywords = {abstract},
+  title={A Proof-of-Concept Severity Screening Tool for Operational Safety Reports in Radiation Oncology},
+  author={Beidler, Peter and Nguyen, Mark and \textbf{K. Lybarger} and Kang, John and Ford, Eric},
+  journal={Journal of Investigative Medicine},
+  volume={70},
+  number={1},
+  pages={262--263},
+  year={2022},
+}
+
+@article{nguyen2022explainable,
+  keywords = {abstract},
+  title={Application of Explainable Machine Learning in Analyzing Safety and Quality Reports from a Clinical Unit},
+  author={Nguyen, Mark and Beidler, Peter and Kang, John and \textbf{K. Lybarger} and Ford, Eric},
+  journal={Journal of Investigative Medicine},
+  volume={70},
+  number={1},
+  pages={314--315},
+  year={2022},
+}
+
 @InProceedings{camirAbstract2022,
   keywords = {abstract},
   title   = "A Corpus of Radiology Reports From Multiple Imaging Modalities With Fine-grained Event-based Annotations",
@@ -807,6 +848,28 @@ journal = {BMJ Open}
   howpublished = "\textit{Information Science and Technology's Advisory Board Meeting}",
   year         = {2023},
   month        = {November},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREPRINTS (standalone: not under review, not published; nonrefereed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@misc{beidler2025triaging,
+  keywords = {nonrefereed},
+  title={Automated Triaging and Transfer Learning of Incident Learning Safety Reports Using Large Language Representational Models},
+  author={Beidler, Peter and Nguyen, Mark and \textbf{K. Lybarger} and Holmberg, Ola and Ford, Eric and Kang, John},
+  howpublished={arXiv preprint arXiv:2509.13706},
+  year={2025},
+  note={\url{https://arxiv.org/abs/2509.13706}},
+}
+
+@misc{gangavarapu2025plain,
+  keywords = {nonrefereed},
+  title={Adapting Biomedical Abstracts into Plain Language Using Large Language Models},
+  author={Gangavarapu, Haritha and Ramachandran, Giridhar Kaushik and \textbf{K. Lybarger} and Yetisgen, Meliha and Uzuner, {\"O}zlem},
+  howpublished={arXiv preprint arXiv:2501.15700},
+  year={2025},
+  note={\url{https://arxiv.org/abs/2501.15700}},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

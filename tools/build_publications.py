@@ -27,7 +27,10 @@ Conventions:
     which moved to tools/highlights.txt.
   - Entry type sets the section when no routing keyword applies:
     article -> Journal Papers, inproceedings -> Conference Papers,
-    incollection -> Book Chapters.
+    incollection -> Book Chapters. A @misc entry is either a talk
+    (keyword "talk") or a standalone preprint (keyword "nonrefereed",
+    venue in howpublished, e.g. {arXiv preprint arXiv:NNNN.NNNNN});
+    any other @misc is an error.
   - award holds honor text shown as a badge on cards and a note in lists.
   - note holds only prose meant to print: free-access links, PMIDs, equal
     contribution footnotes. No status words, no [poster] markers.
@@ -299,6 +302,8 @@ def render(e):
         if t == "incollection" and f.get("publisher"):
             v += f". {esc(f['publisher'])}"
         bits.append(f"{v}, {year}.")
+    elif t == "misc" and f.get("howpublished"):
+        bits.append(f"{rich(f['howpublished'])}, {year}.")
     else:
         bits.append(f"{year}.")
     doi = f.get("doi", "").strip()
@@ -325,6 +330,8 @@ def venue_line(e):
         return f"<em>{rich(f['journal'])}</em>, {year}"
     if f.get("booktitle"):
         return f"<em>{rich(f['booktitle'])}</em>, {year}"
+    if f.get("howpublished"):
+        return f"{rich(f['howpublished'])}, {year}"
     return year
 
 
@@ -391,8 +398,12 @@ def validate(entries, highlights):
             errors.append(f"{e['key']}: entry type @{e['type']} has no section")
         if "invited" in keywords(e) and "talk" not in keywords(e):
             errors.append(f"{e['key']}: keyword 'invited' without 'talk'")
-        if e["type"] == "misc" and "talk" not in keywords(e):
-            errors.append(f"{e['key']}: @misc entry without keyword 'talk'")
+        if e["type"] == "misc" and not keywords(e) & {"talk", "nonrefereed"}:
+            errors.append(f"{e['key']}: @misc entry without keyword 'talk' "
+                          f"or 'nonrefereed'")
+        if (e["type"] == "misc" and "nonrefereed" in keywords(e)
+                and not e["fields"].get("howpublished")):
+            errors.append(f"{e['key']}: @misc preprint without howpublished")
     by_key = {e["key"]: e for e in entries}
     seen = set()
     for k in highlights:
