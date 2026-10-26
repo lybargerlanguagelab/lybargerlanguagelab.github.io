@@ -1,0 +1,46 @@
+<!-- News figure: ATTCK-R, Findings of EMNLP 2026. A six-turn conversation
+     thread on the left (filled bubbles are the attacker, outlined ones the
+     model), a dashed arrow looping a late turn back to an earlier one
+     (adaptive traceback), and an arrow into a shield around a small model
+     network on the right, gold marking the protection layer. Same
+     vocabulary as the home hero and the Projects figures. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Illustration: a six-turn conversation thread, a dashed arrow looping a late turn back to an earlier one, and an arrow into a gold-rimmed shield around a small network">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#4d8f6a"/>
+    </marker>
+  </defs>
+  <rect width="320" height="240" rx="10" fill="#f4f7f5"/>
+
+  <!-- conversation thread, attacker turns filled, model turns outlined -->
+  <rect x="26" y="28" width="120" height="22" rx="11" fill="#006633"/>
+  <rect x="40" y="36" width="72" height="6" rx="3" fill="#ffffff" opacity="0.8"/>
+
+  <rect x="62" y="60" width="120" height="22" rx="11" fill="#ffffff" stroke="#4d8f6a" stroke-width="2.5"/>
+  <rect x="76" y="68" width="60" height="6" rx="3" fill="#a3c4b0"/>
+
+  <rect x="26" y="92" width="120" height="22" rx="11" fill="#006633"/>
+  <rect x="40" y="100" width="88" height="6" rx="3" fill="#ffffff" opacity="0.8"/>
+
+  <rect x="62" y="124" width="120" height="22" rx="11" fill="#ffffff" stroke="#4d8f6a" stroke-width="2.5"/>
+  <rect x="76" y="132" width="44" height="6" rx="3" fill="#a3c4b0"/>
+
+  <rect x="26" y="156" width="120" height="22" rx="11" fill="#006633"/>
+  <rect x="40" y="164" width="80" height="6" rx="3" fill="#ffffff" opacity="0.8"/>
+
+  <rect x="62" y="188" width="120" height="22" rx="11" fill="#ffffff" stroke="#4d8f6a" stroke-width="2.5"/>
+  <rect x="76" y="196" width="68" height="6" rx="3" fill="#a3c4b0"/>
+
+  <!-- traceback: resume from an earlier turn instead of restarting -->
+  <path d="M22 167 C0 167 0 103 22 103" fill="none" stroke="#4d8f6a" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#head)"/>
+
+  <!-- the thread goes to the protected model -->
+  <path d="M190 119 H224" fill="none" stroke="#4d8f6a" stroke-width="2.5" marker-end="url(#head)"/>
+
+  <!-- protected model: shield body is the model, gold rim is the safety layer -->
+  <path d="M266 54 L306 72 V118 C306 152 286 176 266 188 C246 176 226 152 226 118 V72 Z" fill="#006633" stroke="#ffcc33" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M252 104 L280 104 L266 134 Z" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="252" cy="104" r="5" fill="#ffffff"/>
+  <circle cx="280" cy="104" r="5" fill="#ffffff"/>
+  <circle cx="266" cy="134" r="5" fill="#ffffff"/>
+</svg>
