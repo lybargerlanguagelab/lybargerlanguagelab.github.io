@@ -26,10 +26,10 @@ Your entry on `site/people.html` is a short card: photo, name, role, a one-sente
 
 News lives in two places that must be updated together, in one commit:
 
-1. Add an `<article class="news-item">` at the top of the list in `site/news.html`, with an `id` in the form `YYYY-MM-DD-short-slug`, a `<time>` element, and one to three sentences stating the fact being announced. Copy the shape of the item above it.
-2. Add a matching entry at the top of the news strip on `site/index.html`, with the headline linking to `news.html#<that id>`, and drop the oldest entry so the strip stays the same length.
+1. Add an `<article class="news-item">` at the top of the list in `site/news.html`, with an `id` in the form `YYYY-MM-DD-short-slug`, a `<time>` element, an image, and one to three sentences stating the fact being announced. Copy the shape of the item above it.
+2. Add a matching entry at the top of the news strip on `site/index.html`: one `<a class="news-item-featured">` linking to `news.html#<that id>`, holding the same image with `alt=""` and then a `<div>` with the date and the headline. Copy the entry above it, and drop the oldest entry so the strip stays the same length.
 
-An item can carry one image: `<img class="news-figure" ...>` right after the `<h2>`, with real `alt` text and `width`/`height` attributes, the file in `site/assets/images/`. To show the image to the left of the text on wide screens, make the article `class="news-item news-side"`; on phones it stacks either way. The 2026-10-05 and 2026-09-22 items in `site/news.html` are working examples.
+Every item carries one image: `<img class="news-figure" ...>` right after the `<h2>`, with real `alt` text and `width`/`height` attributes, the file in `site/assets/images/`. A photo from the event, a figure from the paper, or the publisher's promotional card all work. If the paper has no usable figure, draw a simple one in the site's style; `site/assets/images/attckr-long-horizon-jailbreaking.svg` is the model (flat shapes in the site greens plus one gold element, no text). The home strip crops the image to a small 3:2 thumbnail, so choose or draw something that still reads at that size. To show the image to the left of the text on the News page, make the article `class="news-item news-side"`; on phones it stacks either way. The 2026-10-26 and 2026-10-05 items in `site/news.html` are working examples.
 
 Ids are permanent once published; do not rename one to fix a typo in the title. News announces only things that are already public (a paper accepted or published, an award announced, a defense held). Write in the lab's voice, not first person.
 
