@@ -457,6 +457,19 @@ h3 > .card-link:focus-visible { text-decoration: underline; }
   margin: 0.6rem 0 0.75rem;
 }
 
+/* Wide labeled diagram, such as a graphical abstract, opt-in on the image:
+   class="news-figure news-figure-wide", on a stacked item (not news-side).
+   It spans the column so its text stays as large as the layout allows, and
+   it sits in a.news-figure-link pointing at the file, so a reader can open
+   it full size. */
+.news-figure-link {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.news-figure-wide { max-width: 100%; }
+
 /* Figure beside the text, opt-in: class="news-item news-side". The figure
    takes the left column across all rows; date, headline, and text fill the
    right column in source order. Below 56rem the item stacks exactly like a
