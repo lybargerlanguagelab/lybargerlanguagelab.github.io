@@ -30,7 +30,8 @@ Conventions:
     incollection -> Book Chapters. A @misc entry is either a talk
     (keyword "talk") or a standalone preprint (keyword "nonrefereed",
     venue in howpublished, e.g. {arXiv preprint arXiv:NNNN.NNNNN});
-    any other @misc is an error.
+    any other @misc is an error. A nonrefereed @misc displays under
+    Preprints; any other nonrefereed entry under Non-refereed Papers.
   - award holds honor text shown as a badge on cards and a note in lists.
   - note holds only prose meant to print: free-access links, PMIDs, equal
     contribution footnotes. No status words, no [poster] markers.
@@ -441,6 +442,8 @@ def classify(e):
     section = next((KEYWORDS[t] for t in sorted(kw) if KEYWORDS.get(t)), None)
     if section is None:
         section = TYPE_SECTIONS[e["type"]]
+    if section == "nonrefereed" and e["type"] == "misc":
+        section = "preprints"   # standalone preprint, per the bib convention
     return section, (ps or "published")
 
 
@@ -539,6 +542,7 @@ def write_talks(entries):
 SECTION_TITLES = [("chapters", "Book Chapters"), ("journal", "Journal Papers"),
                   ("conference", "Conference Papers"),
                   ("nonrefereed", "Non-refereed Papers"),
+                  ("preprints", "Preprints"),
                   ("abstracts", "Abstracts and Posters")]
 
 
@@ -607,6 +611,7 @@ def main():
         section_html("Journal Papers", sections["journal"]),
         section_html("Conference Papers", sections["conference"]),
         section_html("Non-refereed Papers", sections["nonrefereed"], False),
+        section_html("Preprints", sections["preprints"], False),
         section_html("Abstracts and Posters", sections["abstracts"], False,
                      collapsed=True),
     ])
